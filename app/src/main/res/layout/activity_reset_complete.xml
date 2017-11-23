@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:id="@+id/reset_complete_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:txt_center_title="@string/reset_complete_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/reset_complete_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140px"
+            android:src="@mipmap/reset_complete" />
+
+        <TextView
+            android:id="@+id/reset_complete_tips1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reset_complete_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46px"
+            android:text="@string/reset_complete_tips"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px36dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reset_complete_tips1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:text="@string/reset_complete_tips_2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px36dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/reset_complete_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="60px"
+        android:background="@drawable/onclick_green_btn_selector"
+        android:textAllCaps="false"
+        android:text="@string/complete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18" />
+
+</LinearLayout>

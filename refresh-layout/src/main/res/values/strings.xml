@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SmartRefreshLayout</string>
+
+    <string name="srl_loading">正在加载...</string>
+    <string name="srl_refreshing">正在刷新...</string>
+
+    <!--ClassicsFooter-->
+    <string name="srl_pull_up_to_loadmore">上拉加载更多</string>
+    <string name="srl_release_to_load">释放立即加载</string>
+    <string name="srl_loading_completed">加载完成</string>
+    <string name="srl_fail_to_load">加载失败</string>
+    <string name="srl_full_loaded">全部加载完成</string>
+
+    <!--ClassicsHeader-->
+    <string name="srl_pull_down_to_refresh">下拉可以刷新</string>
+    <string name="srl_release_to_refresh">释放立即刷新</string>
+    <string name="srl_refreshing_completed">刷新完成</string>
+    <string name="srl_fail_to_refresh">刷新失败</string>
+    <string name="srl_full_refreshed">全部刷新完成</string>
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true"
+        ligo:txt_center_title="@string/ver_actionbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86px">
+
+        <TextView
+            android:id="@+id/ver_tips_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="@string/ver_tips_1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px28dp" />
+
+        <TextView
+            android:id="@+id/ver_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ver_tips_1"
+            android:text="123123123"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ver_phone_tv"
+            android:text="@string/ver_tips_2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px28dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_weight="1"
+            android:text="@string/ver_code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px28dp" />
+
+        <EditText
+            android:id="@+id/ver_code_edt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="@string/ver_hint"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textSize="@dimen/px30dp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/line_height_01"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30px"
+            android:layout_marginTop="30px"
+            android:background="@color/line" />
+
+        <Button
+            android:id="@+id/ver_resend_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:text="@string/ver_resend"
+            android:textColor="@color/blue"
+            android:textAllCaps="false"
+            android:background="@null"
+            android:textSize="@dimen/px30dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ver_next"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="41px"
+        android:background="@mipmap/green_btn_normal"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/work_states_popu"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/free_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawableLeft="@mipmap/free"
+        android:drawablePadding="14px"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingLeft="20px"
+        android:text="@string/recent_contacts_free"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/busy_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawableLeft="@mipmap/busy"
+        android:drawablePadding="14px"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingLeft="20px"
+        android:text="@string/recent_contacts_busy"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/leave_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawableLeft="@mipmap/leave"
+        android:drawablePadding="14px"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingLeft="20px"
+        android:text="@string/recent_contacts_leave"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/off_duty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawableLeft="@mipmap/off_duty"
+        android:drawablePadding="14px"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingLeft="20px"
+        android:text="@string/recent_contacts_off_duty"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+</LinearLayout>

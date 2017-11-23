@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:id="@+id/report_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true"
+        ligo:txt_center_title="@string/report_actionbar"
+        ligo:txt_right4="@string/report_submit" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="283px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/report_reason_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:focusable="false"
+            android:gravity="left|top"
+            android:hint="@string/report_reason"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:padding="20px"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_report_reason_hint"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/report_text_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginRight="20px"
+            android:text="@string/report_text_number"
+            android:textSize="24px" />
+    </RelativeLayout>
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,450 @@
+<resources>
+    <string name="app_name">eBizzcards Translator</string>
+
+    <!--OrderFragment-->
+    <string name="order_actionbar">Grab an order</string>
+    <string name="order_no">No order yet</string>
+    <string name="order_about_time">Estimated duration:</string>
+
+    <string name="order_grabbed">This order has been robbed</string>
+    <string name="order_expire">This order has expired</string>
+    <string name="order_during_one_hour">Within 1 hour</string>
+    <string name="order_during_one_to_two_hour">2-3 hours</string>
+    <string name="order_during_three_hour">3 hours or more</string>
+    <string name="order_choice">The client selected you for translation</string>
+    <string name="order_is_new">You have a new order for translation</string>
+    <string name="order_over">There is a group of conversational translations that end</string>
+    <!--HistoryOrderFragment-->
+    <string name="history_order_actionbar">Order history</string>
+    <string name="history_order_no">No conversations</string>
+    <string name="history_order_no_score">No score</string>
+    <string name="history_order_translation_fee">Translation fee</string>
+    <!--TranslationRecordFragment-->
+    <string name="translation_record_dialogue">Dialogue record</string>
+    <string name="translation_record_call">Call records</string>
+    <!--GrabOrderFragment-->
+    <string name="grab_order_dialogue">Dialogue grab a single</string>
+    <string name="grab_order_call">Call grab a single</string>
+    <string name="grab_order_failed_title">Grab a single failure, try other options</string>
+    <string name="grab_order_failed_know">I know</string>
+    <!--CallRecordsFragment-->
+    <string name="call_records_no">No call records</string>
+    <string name="call_voice_time">Voice calls %1$d minute</string>
+    <string name="call_video_time">Video call %1$d minute</string>
+    <!--RecentContactsFragment-->
+    <string name="recent_contacts_actionbar">Recent contact</string>
+    <string name="recent_contacts_no_message">No message</string>
+    <string name="recent_contacts_free">Free</string>
+    <string name="recent_contacts_busy">Busy</string>
+    <string name="recent_contacts_leave">Step out</string>
+    <string name="recent_contacts_off_duty">Off work</string>
+    <string name="recent_contacts_history_trans_user">History translation customers</string>
+    <!--MeFragment-->
+    <string name="me_actionbar">Me</string>
+    <string name="me_nickname">Nick: &#160;</string>
+    <string name="me_my_wallet">My wallet</string>
+    <string name="me_orders_num">The number of receiving orders</string>
+    <string name="me_work_time">Work time</string>
+    <string name="me_language">Mastery languages</string>
+    <string name="me_my_application">My application</string>
+    <string name="me_setting">Setting</string>
+    <string name="me_not_applied">Not applied</string>
+    <string name="me_unconfirmed">Unaudited</string>
+    <string name="me_authenticated">Certified</string>
+    <string name="me_unauthenticated">Not pass certified</string>
+    <string name="me_confirming">Confirming</string>
+    <string name="me_evaluation_lvl">Rating:  &#160;</string>
+    <string name="me_complete_identity_first">Please complete the authentication first</string>
+    <!--ChatActivity-->
+    <string name="chat_send_msg">Send</string>
+    <string name="chat_cancel_msg">Cancel</string>
+    <string name="chat_msg_image">[Image]</string>
+    <string name="chat_msg_voice">[Voice]</string>
+    <string name="chat_msg_voice_txt">Voice</string>
+    <string name="chat_msg_micro_video">[Small video]</string>
+    <string name="chat_msg_video">[Video]</string>
+    <string name="chat_msg_product">[Products]</string>
+    <string name="chat_msg_file">[File]</string>
+    <string name="record_voice_error">The recording permissions are blocked or the recording device is damaged!\Please check whether the permissions are opened in the Settings！</string>
+    <string name="record_voice_permission">Please turn on the microphone</string>
+    <string name="record_voice_camera_permission">Please turn on the camera</string>
+    <string name="start_trans">This translation begins</string>
+    <string name="end_trans">This is the end of the translation.Duration:</string>
+    <string name="chat_picture">:sent a picture</string>
+    <string name="chat_voice">:sent a voice</string>
+    <string name="chat_video">:sent a video</string>
+    <string name="chat_product">:sent a product</string>
+    <string name="at_you">\@you</string>
+    <string name="click_record_voice">Click on the recording</string>
+    <string name="space">&#160;</string>
+    <!--ReportActivity-->
+    <string name="report_actionbar">Complaints</string>
+    <string name="report_submit">Submit</string>
+    <string name="report_reason">Please enter the reasons for the complaint</string>
+    <string name="report_text_number">100</string>
+
+    <!--common-->
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="complete">Complete</string>
+    <string name="year">year</string>
+    <string name="month">month</string>
+    <string name="day">day</string>
+    <string name="hour">h</string>
+    <string name="min">m</string>
+    <string name="second">s</string>
+    <string name="submit">submit</string>
+    <string name="submitting">submitting...</string>
+    <string name="submitting_success">Submitted successfully</string>
+    <string name="submitting_filed">Submitted failure</string>
+    <string name="prompt">Prompt</string>
+    <string name="prompt_content">Your current account is logged on to another device</string>
+    <string name="selected">Selected %1$s items</string>
+    <string name="cut">Cut</string>
+
+    <!--hint-->
+    <string name="hint_input_name">Please enter your name</string>
+    <string name="hint_input_phone">Please enter your mobile number</string>
+    <string name="hint_input_pwd">Please enter your password</string>
+    <string name="hint_pwd_form">Please enter a password of six or more letters and Numbers, and you must not use your account as your password</string>
+
+    <!--LoginActivity-->
+    <string name="login_actionbar">Login</string>
+    <string name="login_country_district">Country/Region</string>
+    <string name="login_china">China</string>
+    <string name="login_hint_phone">Please fill in the cell phone number</string>
+    <string name="login_district_num">+86</string>
+    <string name="login_pwd">Password</string>
+    <string name="login_pwd_hint">Please fill in the password.</string>
+    <string name="login_loging">Login</string>
+    <string name="login_register">Sign up</string>
+    <string name="login_forget">Forgot password</string>
+    <string name="login_being_login">Logging...</string>
+    <string name="login_success">Login successful</string>
+    <string name="login_phone_permission">Please turn on the phone authority</string>
+    <string name="login_user_not_registered">User does not exist</string>
+    <string name="login_password_wrong">Wrong password</string>
+    <string name="login_internet_error">Network error</string>
+
+    <!--RegisterActivity-->
+    <string name="register_actionbar">Sign up</string>
+    <string name="register_nickname">Nickname</string>
+    <string name="register_nickname_demo">E.g: Amanda</string>
+    <string name="register_phone_hint">Cellphone number</string>
+    <string name="forget_pwd_hint">Please fill in the cell phone number</string>
+    <string name="register_pwd_hint">6 or more letters and numbers</string>
+    <string name="register_regist">Sign up</string>
+    <string name="register_take_photo">Take photo</string>
+    <string name="register_from_album">Photo</string>
+    <string name="register_protocol">Copyright notices and privacy protections</string>
+    <string name="register_protocol_actionbar">Account registration protocol</string>
+    <string name="register_confirm_phone">Confirm cell phone number</string>
+    <string name="register_sms_code_send_to">SMS verification code sent to :</string>
+    <string name="register_sms_code_sending">Sending</string>
+
+    <string name="register_success">Register success</string>
+    <string name="register_fail">Register failed</string>
+    <string name="search">Search</string>
+
+    <!--RegisterPhoneVerActivity-->
+    <string name="ver_actionbar">Fill in the verification</string>
+    <string name="ver_tips_1">Enter the code that phone </string>
+    <string name="ver_tips_2">received</string>
+    <string name="ver_code">Verification code</string>
+    <string name="ver_resend">Resend</string>
+    <string name="ver_hint">SMS verification code</string>
+    <string name="ver_registering">Registering...</string>
+    <string name="ver_code_error">Verification code error or has failed</string>
+
+    <string name="title_activity_chat">ChatActivity</string>
+
+    <!--RegisterSuccessActivity-->
+    <string name="register_success_title">Congratulations on your registration!</string>
+    <string name="register_success_phone_binded_account">The phone has been linked to the account</string>
+    <string name="register_success_login">Login immediately</string>
+    <string name="register_success_continue">Continue to improve your personal information and certification >></string>
+
+    <!--CountrySelectActivity-->
+    <string name="country_select_actionbar">Countries and regions</string>
+
+    <!--ForgetPhoneActivity-->
+    <string name="forget_phone_actionbar">Forgot password</string>
+    <string name="forget_phone_tips">Retrieved by SMS verification code</string>
+
+    <!--ResetPasswordActivity-->
+    <string name="reset_pwd_actionbar">Reset the new password</string>
+    <string name="reset_pwd_tips">The new password is a combination of six or more letters and numbers</string>
+    <string name="reset_pwd_new_pwd">New password</string>
+    <string name="reset_pwd_new_pwd_hint">Enter new password</string>
+    <string name="reset_pwd_confirm_pwd">Confirm password</string>
+    <string name="reset_pwd_confirm_pwd_hint">Enter password again</string>
+    <string name="pwd_dissimilarity">The two passwords inputted do not match</string>
+
+    <!--ResetCompleteActivity-->
+    <string name="reset_complete_actionbar">Reset to complete</string>
+    <string name="reset_complete_tips">Reset the new password successfully!</string>
+    <string name="reset_complete_tips_2">Please return login</string>
+
+    <!--PersonalBaseMessageActivity-->
+    <string name="base_msg_actionbar">Improve information</string>
+    <string name="base_msg_name">* Name</string>
+    <string name="base_msg_name_hint">Your real name</string>
+    <string name="base_msg_idcard">* Id card</string>
+    <string name="base_msg_idcard_hint">Your id number</string>
+    <string name="base_msg_education">* Education</string>
+    <string name="base_msg_education_hint">What\'s your education</string>
+    <string name="base_msg_profession">* Profession</string>
+    <string name="base_msg_profession_hint">What is your major</string>
+    <string name="base_msg_language">* Languages</string>
+    <string name="base_msg_language_hint">How many languages do you have</string>
+
+    <!--SelectEducationActivity-->
+    <string name="education_actionbar">Education</string>
+    <string name="education_senior">Senior high</string>
+    <string name="education_college">Junior college</string>
+    <string name="education_undergraduate">Undergraduate college</string>
+    <string name="education_master">Postgraduate</string>
+    <string name="education_doctor">Doctor</string>
+
+    <!--SelectLanguageActivity-->
+    <string name="language_select_actionbar">Languages</string>
+
+    <!--UploadIdCardActivity-->
+    <string name="upload_idcard_actionbar">Upload credentials</string>
+    <string name="upload_idcard_tip">* Please upload your id card</string>
+    <string name="upload_idcard_tip2">Note: please upload clear photos and the image is less than 5M.</string>
+    <string name="upload_idcard_positive">Positive</string>
+    <string name="upload_idcard_negative">Negative</string>
+    <string name="upload_idcard_halfbody">Handheld ID photo</string>
+    <string name="upload_idcard_toast">Please upload the photos in order</string>
+
+    <!--PersonalInfoConfirmActivity-->
+    <string name="personal_info_name">Name</string>
+    <string name="personal_info_idcard">Id card</string>
+    <string name="personal_info_education">Education</string>
+    <string name="personal_info_profession">Profession</string>
+    <string name="personal_info_idcard_confirm">Identification</string>
+    <string name="personal_info_education_confirm">Education Certificate</string>
+    <string name="personal_info_confirm_state">Audit status</string>
+    <string name="personal_info_reapply">Reapply</string>
+
+    <!--LanguageConfirmActivity-->
+    <string name="language_confirm_cers">Certificate uploaded</string>
+
+    <!--UploadCertificateActivity-->
+    <string name="upload_certificate_tip1">* Please upload your diploma or student ID</string>
+    <string name="upload_certificate_tip2">* Language level certificates, or other relevant certificates</string>
+    <string name="upload_certificate_btn">Submit the certification</string>
+
+    <!--SubmitCompleteActivity-->
+    <string name="submit_actionbar">Submit completed</string>
+    <string name="submit_tip1">Your information has been successfully submitted</string>
+    <string name="submit_tip2">The results will be reviewed within 3 working days</string>
+    <string name="submit_tip3">Please keep cell phone communication open</string>
+
+    <!--SettingActivity-->
+    <string name="setting_actionbar">Setting</string>
+    <string name="setting_notification">Notification</string>
+    <string name="setting_languages">Language</string>
+    <string name="setting_clear_cache">Clear cache</string>
+    <string name="setting_version">Version</string>
+    <string name="setting_logout">Logout</string>
+
+    <!--SettingNotificationActivity-->
+    <string name="notification_get_new_msg">Receive notifications for new messages</string>
+    <string name="notification_opened">Open</string>
+    <string name="notification_detail">The notification displays the message details</string>
+    <string name="notification_tip1">When the message is received, the notification will not show the sender and the content summary</string>
+    <string name="notification_sound">Sound</string>
+    <string name="notification_vibrate">Vibrate</string>
+    <string name="notification_tip2">When the system is running, you can set whether it needs sound or vibration</string>
+
+    <!--SettingLanguagesActivity-->
+    <string name="setting_languages_tip">Current Selected Language</string>
+    <string name="setting_languages_zh">简体中文</string>
+    <string name="setting_languages_en">English</string>
+
+    <!--MyProfileActivity-->
+    <string name="myprofile_actionbar">My profile</string>
+    <string name="myprofile_avatar">Avatar</string>
+    <string name="myprofile_nickname">Nickname</string>
+    <string name="myprofile_account">ID account</string>
+    <string name="myprofile_star_lvl">Rating</string>
+    <string name="myprofile_birthday">Birthday</string>
+    <string name="myprofile_sex">Sex</string>
+    <string name="myprofile_location">Area</string>
+    <string name="myprofile_edit_nickname">Edit nickname</string>
+    <string name="myprofile_input_nickname">Please enter a nickname</string>
+    <string name="myprofile_male">Male</string>
+    <string name="myprofile_female">Female</string>
+    <string name="myprofile_choose_sex">Sex selection</string>
+
+    <!--OrderNumActivity-->
+    <string name="order_num_actionbar">Orders number</string>
+    <string name="order_num_1">1 group</string>
+    <string name="order_num_2">2 groups</string>
+    <string name="order_num_3">3 groups</string>
+    <string name="order_num_4">4 groups</string>
+    <string name="order_num_5">5 groups</string>
+
+    <!--WorkTimeActivity-->
+    <string name="work_time_choose_time">Select the time period</string>
+    <string name="work_work_on">Work time</string>
+    <string name="work_work_off">Off work time</string>
+    <string name="work_time_toast_complete_choose">Please choose complete time of working and get off work time</string>
+
+    <!--MyApplicationActivity-->
+    <string name="my_apply_personal_msg">Personal information authentication</string>
+    <string name="my_apply_not_passed">Not pass</string>
+    <string name="my_apply_passed">Passed</string>
+    <string name="my_apply_confirming">Confirming</string>
+    <string name="my_apply_item_ex">Translation qualification</string>
+
+    <!--MasterLanguageActivity-->
+    <string name="master_language_passed">Passed languages</string>
+    <string name="master_language_apply">Apply for language</string>
+    <string name="master_language_unconfirmed">Unaudited language</string>
+    <string name="apply">Apply</string>
+    <string name="commonly">(general)</string>
+    <string name="skilled">(skilled)</string>
+    <string name="master">(master)</string>
+    <string name="master_forbid_language">When disabled, you will no longer accept orders for that language. Re-enable can be restored.</string>
+    <string name="master_forbid">Disable</string>
+    <string name="master_start_language">When enabled, the customer can give you an order translate the language.</string>
+    <string name="master_start">Enable</string>
+
+    <!--MeMsgActivity-->
+    <string name="me_msg_actionbar">System message</string>
+    <string name="me_msg_clear">Clear</string>
+    <string name="me_msg_no_content">No mail</string>
+
+    <!--MyWalletActivity-->
+    <string name="my_wallet_left">Balance（RMB）</string>
+    <string name="my_wallet_take_money">Withdraw</string>
+    <string name="my_wallet_add_bank_card">Add bank card</string>
+    <string name="my_wallet_my_bank_card">My bank card</string>
+    <string name="my_wallet_over_1000">Only you can withdraw cash when balance reached 1000 yuan</string>
+    <string name="my_wallet_limit">You can withdraw 3 times a day, not less than 1 yuan every time</string>
+    <string name="bind_bank_card">Please bind the bank card first</string>
+
+    <!--OpeningPointActivity-->
+    <string name="opening_point_title">Bank outlets</string>
+    <string name="province">Provinces</string>
+    <string name="city">City</string>
+    <string name="point">Outlets</string>
+    <string name="province_name_hint">Please select the province where the bank account located</string>
+    <string name="city_name_hint">Please select the city where the bank account located</string>
+    <string name="point_name_hint">Please select the bank branch of this card</string>
+
+
+    <!--AddBankCardActivity-->
+    <string name="add_bank_name">Name</string>
+    <string name="add_bank_name_hint">Please complete your personal information</string>
+    <string name="add_bank_card_num">Card number</string>
+    <string name="add_bank_card_num_hint">Please enter the bank card number</string>
+    <string name="add_bank_country">Country</string>
+    <string name="add_bank_country_default">China</string>
+    <string name="add_bank_bank">Bank</string>
+    <string name="add_bank_bank_hint">Please select your bank</string>
+    <string name="add_bank_open_account">Bank outlets</string>
+    <string name="add_bank_open_account_hint">Please select the bank outlet of this card</string>
+    <string name="add_bank_agreed">Read and agree to the following agreement</string>
+    <string name="add_bank_protocol">User payment agreement</string>
+    <string name="bind_card_already_bind">The card number has been bound</string>
+
+    <!--BankCardPasswordSettingActivity-->
+    <string name="bank_password_setting_actionbar">Set the withdrawal password</string>
+    <string name="bank_password_setting_tip1">The withdrawal password is the security code you need to verify every time you withdraw.</string>
+    <string name="bank_password_setting_confirm">Confirm the withdrawal password again</string>
+    <string name="pwd_error">The two passwords inputted do not match</string>
+    <string name="bank_password_old">Please enter your old password</string>
+    <string name="bank_password_new">Please enter a new password</string>
+    <string name="bank_password_new_again">Please enter the new password again</string>
+    <string name="bank_password_error">The input password is incorrect</string>
+
+    <!--MyBankCardActivity-->
+    <string name="my_bankcard_actionbar">Bank card</string>
+    <string name="my_bankcard_release_bind">Unbind</string>
+    <string name="bank_type">Deposit card</string>
+
+    <!--MyWalletDialog-->
+    <string name="my_wallet_dialog_add_bank">Add bank card</string>
+    <string name="my_wallet_dialog_record">Withdrawal record</string>
+    <string name="my_wallet_no_record">No record</string>
+    <string name="my_wallet_dialog_password">Password management</string>
+
+    <!--MyWalletPasswordManagerActivity-->
+    <string name="change_my_wallet_password">Modify the withdrawal password</string>
+    <string name="forget_my_wallet_password">Forget the withdrawal password</string>
+
+    <!--TakeExtraCashActivity-->
+    <string name="take_extra_actionbar">Withdraw balance</string>
+    <string name="take_extra_num">Withdrawal amount</string>
+    <string name="take_extra">Balance</string>
+    <string name="take_extra_take_all">All withdrawal</string>
+    <string name="take_extra_tip1">Within 1&#8211;3 working days to the account</string>
+    <string name="take_extra_tip2_over_times">You have been withdrew 3 times today,Please come back tomorrow.\nPlease contact us if you have any questions.</string>
+    <string name="take_extra_take">Withdraw</string>
+    <string name="take_extra_money_over_extra">The number inputted is more than balance of account</string>
+    <string name="take_extra_input_pwd">Please enter your withdrawal password</string>
+    <string name="bank_card_last_num">Tail number</string>
+    <string name="take_cash_pwd_error">The withdrawal password is incorrect</string>
+    <string name="take_cash_time_error">Over daily withdrawal times</string>
+
+    <!--TakeCashDetailActivity-->
+    <string name="take_detail_actionbar">Withdrawal details</string>
+    <string name="take_detail_success">Successful withdrawal application</string>
+    <string name="take_detail_tip">After been verified, the money will be received within 1&#8211;3 working days.
+        \n If the bank card owner is inconsistent with the cardholder name, then this money will be returned to your Translator account.</string>
+
+    <!--CurrencyType-->
+    <string name="currency_zh">¥</string>
+    <string name="currency_en">$</string>
+    <string name="currency_in">Rp</string>
+
+    <!--RecentContactsFragment-->
+    <string name="start_translation">[System message] Now let\'s translate</string>
+    <string name="end_translation">[System message] End of the translation</string>
+
+    <!--CountryAndBankListActivity-->
+    <string name="choice_country">Country selection</string>
+    <string name="choice_bank">Select bank</string>
+    <string name="choice_province">Province</string>
+    <string name="choice_city">City</string>
+    <string name="choice_bank_point">Bank outlets</string>
+
+    <!--MyWalletRecordActivity-->
+    <string name="get_cash_ing">Withdrawing</string>
+    <string name="get_cash_error">Withdrawal failed</string>
+    <string name="get_cash_success">Transferred</string>
+
+    <!--MyWalletRecordDetailActivity-->
+    <string name="my_wallet_record_detail_title">Details of withdrawal</string>
+    <string name="cash_of_amount">Withdrawal amount</string>
+    <string name="cash_of_order">Withdrawal order</string>
+    <string name="cash_of_status">Withdrawal state</string>
+    <string name="cash_of_bank">Withdrawal bank</string>
+    <string name="cash_of_time">Transferred time</string>
+    <string name="cash_failed_reason">The reason for failure</string>
+
+    <!--UserServiceAgreementActivity-->
+    <string name="user_service_agreement_title">User service agreement</string>
+
+    <string name="voice_calls_title">Voice calls</string>
+    <string name="voice_calls_content">Invite you to translate a voice call...</string>
+    <string name="voice_calls_mute">Mute</string>
+    <string name="voice_calls_hands_free">Hands free</string>
+    <string name="voice_calls_hand_up">Hang up</string>
+    <string name="voice_calls_reject">Reject</string>
+    <string name="voice_calls_accept">Answer</string>
+    <string name="voice_calls_switch">Switch</string>
+    <string name="voice_calls_connect_voip_server">Connecting...</string>
+
+    <string name="video_calls_title">Video calls</string>
+    <string name="video_calls_time">Minute</string>
+    <string name="voice_calls_video_content">Invite you to translate a video call...</string>
+
+    <string name="notify_close_detail_more_than_contact_send">Contacts person sent</string>
+    <string name="notify_close_detail_send_msg">Messages</string>
+</resources>

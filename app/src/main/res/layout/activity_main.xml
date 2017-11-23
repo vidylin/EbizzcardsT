@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".business.MainActivity">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:id="@+id/main_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.gzligo.ebizzcardstranslator.common.viewpager.ViewPager
+                android:id="@+id/main_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1px"
+                android:background="#888" />
+
+            <com.gzligo.ebizzcardstranslator.common.indicator.GradualTabsIndicator
+                android:id="@+id/main_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_indicator_height"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <com.gzligo.ebizzcardstranslator.common.indicator.GradualTabView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/main_indicator_padding"
+                    app:tabIconNormal="@mipmap/main_indicator_message_normal"
+                    app:tabIconSelected="@mipmap/main_indicator_message_selected" />
+
+                <com.gzligo.ebizzcardstranslator.common.indicator.GradualTabView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/main_indicator_padding"
+                    app:tabIconNormal="@mipmap/main_indicator_order_normal"
+                    app:tabIconSelected="@mipmap/main_indicator_order_selected" />
+
+                <com.gzligo.ebizzcardstranslator.common.indicator.GradualTabView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/main_indicator_padding"
+                    app:tabIconNormal="@mipmap/main_indicator_history_normal"
+                    app:tabIconSelected="@mipmap/main_indicator_history_selected" />
+
+                <com.gzligo.ebizzcardstranslator.common.indicator.GradualTabView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/main_indicator_padding"
+                    app:tabIconNormal="@mipmap/main_indicator_me_normal"
+                    app:tabIconSelected="@mipmap/main_indicator_me_selected" />
+            </com.gzligo.ebizzcardstranslator.common.indicator.GradualTabsIndicator>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_personal_msg_unconfirmed_rl"
+            android:layout_width="match_parent"
+            android:layout_height="62px"
+            android:background="@color/main_unconfirmed_bg"
+            android:alpha="0.65">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/px24dp"
+                android:textColor="@color/white"
+                android:text="@string/register_success_continue"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

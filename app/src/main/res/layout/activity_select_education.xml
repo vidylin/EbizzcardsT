@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:id="@+id/register_success_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true"
+        ligo:txt_center_title="@string/education_actionbar" />
+    <com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePureScrollMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/education_college_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/onclick_color_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/education_college"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:id="@+id/education_college_check_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/education_select_blue_check"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_01"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20px"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/education_undergraduate_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@drawable/onclick_color_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/education_undergraduate"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:id="@+id/education_undergraduate_check_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/education_select_blue_check"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_01"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20px"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/education_master_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@drawable/onclick_color_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/education_master"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:id="@+id/education_master_check_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/education_select_blue_check"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_01"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20px"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/education_doctor_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@drawable/onclick_color_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/education_doctor"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:id="@+id/education_doctor_check_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/education_select_blue_check"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout>
+
+</LinearLayout>

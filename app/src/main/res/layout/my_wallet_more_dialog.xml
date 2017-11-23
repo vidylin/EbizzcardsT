@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/my_wallet_more_add_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@drawable/onclick_top_double_corners_selector">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px34dp"
+            android:text="@string/my_wallet_dialog_add_bank"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_01"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dialog_line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_wallet_more_record"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@drawable/onclick_dialog_selector">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px34dp"
+            android:text="@string/my_wallet_dialog_record"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_01"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dialog_line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_wallet_more_password"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@drawable/onclick_bot_double_corners_selector">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px34dp"
+            android:text="@string/my_wallet_dialog_password"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

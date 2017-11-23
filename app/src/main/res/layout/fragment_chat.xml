@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chat_fragment_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true">
+
+    <com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout
+        android:id="@+id/audio_record_layout_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadmore="false"
+        android:layout_above="@+id/audio_record_layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout>
+
+    <com.gzligo.ebizzcardstranslator.common.AudioRecordLayout
+        android:id="@+id/audio_record_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

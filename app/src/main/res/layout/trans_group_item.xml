@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/trans_groups_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginBottom="8px"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/from_people_img"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:src="@mipmap/msg_default_head_img" />
+
+            <ImageView
+                android:id="@+id/to_people_img"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginLeft="31px"
+                android:layout_marginTop="21px"
+                android:src="@mipmap/msg_default_head_img" />
+            <cn.bingoogolapple.badgeview.BGABadgeImageView
+                android:id="@+id/people_img_rl"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

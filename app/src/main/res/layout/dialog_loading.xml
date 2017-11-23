@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:alpha="0.7"
+    android:background="@drawable/dialog_bg_shape"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_20"
+    android:paddingLeft="@dimen/height_30"
+    android:paddingRight="@dimen/height_30"
+    android:paddingTop="@dimen/margin_20">
+
+    <com.gzligo.ebizzcardstranslator.common.JuhuaProgressBar
+        android:id="@+id/dialog_pb"
+        android:layout_margin="20dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/dialog_loading_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4"
+        android:gravity="center"
+        android:text="@string/login_loging"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18"/>
+</LinearLayout>

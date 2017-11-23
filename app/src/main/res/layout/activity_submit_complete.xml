@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:txt_center_title="@string/submit_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px">
+
+        <ImageView
+            android:id="@+id/submit_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140px"
+            android:src="@mipmap/submit_complete" />
+
+        <TextView
+            android:id="@+id/submit_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/submit_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:text="@string/submit_tip1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px36dp" />
+
+        <TextView
+            android:id="@+id/submit_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/submit_tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5px"
+            android:text="@string/submit_tip2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px36dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/submit_tv2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5px"
+            android:text="@string/submit_tip3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px36dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit_complete_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="60px"
+        android:background="@drawable/onclick_green_btn_selector"
+        android:textAllCaps="false"
+        android:text="@string/complete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18" />
+
+</LinearLayout>

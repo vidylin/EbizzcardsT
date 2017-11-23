@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+            android:id="@+id/register_success_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ligo:show_back_icon="true"
+            ligo:txt_center_title="@string/my_apply_personal_msg"/>
+
+    <com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePureScrollMode="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="88px"
+                    android:layout_marginTop="20px"
+                    android:background="@drawable/onclick_color_selector">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/personal_info_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30dp"
+                        android:layout_marginLeft="20px"/>
+
+                    <TextView
+                        android:id="@+id/personal_info_confirm_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="245px"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_height_01"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="20px"
+                        android:background="@color/line" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="88px"
+                    android:background="@drawable/onclick_color_selector">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/personal_info_idcard"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30dp"
+                        android:layout_marginLeft="20px"/>
+
+                    <TextView
+                        android:id="@+id/personal_info_confirm_idcard_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="245px"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_height_01"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="20px"
+                        android:background="@color/line" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="88px"
+                    android:background="@drawable/onclick_color_selector">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/personal_info_education"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30dp"
+                        android:layout_marginLeft="20px"/>
+
+                    <TextView
+                        android:id="@+id/personal_info_confirm_education_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="245px"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_height_01"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="20px"
+                        android:background="@color/line" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="88px"
+                    android:background="@drawable/onclick_color_selector">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/personal_info_profession"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30dp"
+                        android:layout_marginLeft="20px"/>
+
+                    <TextView
+                        android:id="@+id/personal_info_confirm_profession_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="245px"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_height_01"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="20px"
+                        android:background="@color/line" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/onclick_color_selector">
+
+                    <TextView
+                        android:id="@+id/personal_info_idcard_confirm_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/personal_info_idcard_confirm"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30dp"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="30px"/>
+
+                    <LinearLayout
+                        android:id="@+id/personal_info_confirm_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="180px"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/personal_info_idcard_confirm_tv"
+                        android:layout_marginTop="20px">
+
+                        <ImageView
+                            android:id="@+id/personal_info_idcard_1"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20px"/>
+
+                        <ImageView
+                            android:id="@+id/personal_info_idcard_2"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20px"/>
+
+                        <ImageView
+                            android:id="@+id/personal_info_idcard_3"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginRight="20px"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_height_01"
+                        android:layout_marginLeft="20px"
+                        android:layout_below="@id/personal_info_confirm_ll"
+                        android:layout_marginTop="20px"
+                        android:background="@color/line" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/onclick_color_selector">
+
+                    <TextView
+                        android:id="@+id/personal_info_education_confirm_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/personal_info_education_confirm"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30dp"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="30px"/>
+
+                    <ImageView
+                        android:id="@+id/personal_info_edcation_iv"
+                        android:layout_width="223px"
+                        android:layout_height="180px"
+                        android:layout_below="@id/personal_info_education_confirm_tv"
+                        android:layout_marginTop="20px"
+                        android:layout_marginLeft="20px"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_height_01"
+                        android:layout_marginLeft="20px"
+                        android:layout_below="@id/personal_info_edcation_iv"
+                        android:layout_marginTop="20px"
+                        android:background="@color/line" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/onclick_color_selector"
+                    android:layout_marginBottom="20px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="88px"
+                        android:text="@string/personal_info_confirm_state"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30dp"
+                        android:layout_marginLeft="20px"/>
+
+                    <TextView
+                        android:id="@+id/personal_info_confirm_state_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88px"
+                        android:layout_marginLeft="245px"
+                        android:text="@string/my_apply_not_passed"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color_hint"
+                        android:textSize="@dimen/px30dp" />
+
+                    <TextView
+                        android:id="@+id/personal_info_confirm_state_not_pass_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/personal_info_confirm_state_tv"
+                        android:layout_marginLeft="245px"
+                        android:layout_marginBottom="20px"
+                        android:layout_marginRight="20px"
+                        android:textColor="@color/black"
+                        android:text="@string/notification_tip2"
+                        android:textSize="@dimen/px24dp"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/personal_info_confirm_passed_reapply_btn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:background="@drawable/onclick_green_btn_selector"
+                    android:textAllCaps="false"
+                    android:text="@string/personal_info_reapply"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_18"
+                    android:visibility="gone"/>
+
+        </LinearLayout>
+
+        </ScrollView>
+
+    </com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/chat_time_left" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px">
+
+        <ImageView
+            android:id="@+id/people_img"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="15px"
+            android:background="@mipmap/default_head_portrait" />
+
+        <LinearLayout
+            android:layout_width="530px"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_translate_display_left"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/private_to_nick_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/black"
+                        android:background="@color/chat_head_bg"
+                        android:padding="6px"
+                        android:visibility="gone"/>
+
+                    <RelativeLayout
+                        android:id="@+id/video_rl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ProgressBar
+                            android:id="@+id/video_down_progress"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone"/>
+                        <com.waynell.videolist.widget.TextureVideoView
+                            android:id="@+id/video_player"
+                            android:layout_margin="10px"
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            app:scaleType="fitCenter"
+                            />
+                        <ImageView
+                            android:id="@+id/pre_img"
+                            android:layout_margin="10px"
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:visibility="gone"/>
+                        <ImageView
+                            android:id="@+id/play_video_img"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/play_video"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/report_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:visibility="gone"
+            android:drawableLeft="@drawable/chat_report_selector"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_size_14" />
+
+        <CheckBox
+            android:id="@+id/chat_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:button="@null"
+            android:visibility="gone"
+            android:drawableLeft="@drawable/chat_un_translation_selector" />
+    </LinearLayout>
+
+
+</LinearLayout>

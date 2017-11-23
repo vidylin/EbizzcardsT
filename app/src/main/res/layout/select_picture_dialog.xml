@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dialog_bg">
+
+    <RelativeLayout
+        android:id="@+id/select_picture_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@drawable/onclick_dialog_selector">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px34dp"
+            android:text="@string/register_take_photo"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_01"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dialog_line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_picture_from_album"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@drawable/onclick_dialog_selector">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px34dp"
+            android:text="@string/register_from_album"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/select_picture_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@drawable/onclick_dialog_selector">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px34dp"
+            android:text="@string/cancel"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

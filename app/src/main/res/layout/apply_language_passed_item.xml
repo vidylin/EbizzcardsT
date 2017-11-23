@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/application_language_passed_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/master_language_passed"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginBottom="20px"
+        android:textSize="@dimen/px28dp"
+        android:textColor="@color/black_body_simple"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/apply_language_passed_item_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px30dp"
+            android:text="简历"
+            android:layout_marginLeft="20px"
+            android:gravity="center_vertical"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/parting_line"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+    
+</LinearLayout>

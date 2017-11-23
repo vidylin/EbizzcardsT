@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:id="@+id/login_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true" />
+
+    <com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePureScrollMode="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/audio_record_layout" />
+    </com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <!-- HMS connection failed message.-->
+    <string name="hwpush_connect_failed_hms_missing">HMS missing</string>
+    <string name="hwpush_connect_failed_hms_disabled">HMS disabled</string>
+    <string name="hwpush_connect_failed_hms_invalid">HMS invalid</string>
+    <string name="hwpush_connect_failed_hms_version_update_required">HMS version update required</string>
+    <string name="hwpush_connect_failed_hms_upgrading">HMS is upgrading</string>
+    <!-- HMS connection failed recommend tip.-->
+    <string name="hwpush_connect_failed_hms_missing_recommend">You are not able to use huawei native push route, strongly recommend you to Huawei market or other market to download and install latest HMS.</string>
+    <string name="hwpush_connect_failed_hms_disabled_or_invalid_recommend">Please check whether HMS is working correctly.</string>
+    <string name="hwpush_connect_failed_hms_version_update_required_recommend">HMS current version is so old, strongly recommend you to Huawei market or other market to download and install latest HMS.</string>
+    <string name="hwpush_connect_failed_hms_upgrading_recommend">You can use hms after it upgrade successfully.</string>
+
+    <!-- Base function Text. -->
+    <string name="hisirpush_confirm">Confirm</string>
+    <string name="hisirpush_cancel">Cancel</string>
+</resources>

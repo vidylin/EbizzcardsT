@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gzligo.ebizzcardstranslator.common.DraggableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/voip_video_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.xgfjyw.webrtcclient.voip.SurfaceViewRenderer
+        android:id="@+id/voip_video_fullscreen_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.github.xgfjyw.webrtcclient.voip.SurfaceViewRenderer
+        android:id="@+id/voip_video_overlay_view"
+        android:layout_width="81dp"
+        android:layout_height="144dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="6dp"
+        android:tag="draggable"/>
+
+    <RelativeLayout
+        android:id="@+id/voip_video_control_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="undraggable">
+
+        <ImageView
+            android:id="@+id/voip_video_minimize_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            android:background="@mipmap/voip_video_minimize"
+            android:contentDescription="视频通话最小化"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/voip_video_control_bar_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/voip_video_contacts_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="LISA"
+                android:textColor="@color/white_status"
+                android:textSize="18sp"/>
+
+            <Chronometer
+                android:id="@+id/voip_video_chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:format="%s"
+                android:textColor="@color/white_status"/>
+
+            <TextView
+                android:id="@+id/prompt_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:layout_marginTop="30px"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:text="@string/voice_calls_video_content"/>
+
+            <TextView
+                android:id="@+id/language_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="30px"
+                android:layout_marginTop="30px"
+                android:layout_centerHorizontal="true"
+                android:text="简体中文 | 英语"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/voip_video_control_bar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/voip_video_reject_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="视频通话拒绝"
+                android:drawablePadding="6dp"
+                android:drawableTop="@drawable/call_reject_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/voice_calls_reject"
+                android:textColor="@color/white_status"/>
+
+            <TextView
+                android:id="@+id/voip_video_camera_switch_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:visibility="gone"
+                android:contentDescription="视频通话摄像头切换"
+                android:drawablePadding="6dp"
+                android:drawableTop="@drawable/voip_video_camera_switch_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/voice_calls_switch"
+                android:textColor="@color/white_status"/>
+
+            <TextView
+                android:id="@+id/voip_video_hang_up_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="视频通话挂断"
+                android:visibility="invisible"
+                android:drawablePadding="6dp"
+                android:drawableTop="@drawable/call_reject_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/voice_calls_hand_up"
+                android:textColor="@color/white_status"/>
+
+            <CheckBox
+                android:id="@+id/voip_video_mute_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:button="@null"
+                android:contentDescription="视频通话静音"
+                android:drawablePadding="6dp"
+                android:drawableTop="@drawable/call_mute_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/voice_calls_mute"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:textColor="@color/white_status"/>
+
+            <TextView
+                android:id="@+id/voip_video_accept_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="视频通话接受"
+                android:drawablePadding="6dp"
+                android:drawableTop="@drawable/call_accept_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/voice_calls_accept"
+                android:textColor="@color/white_status"/>
+        </LinearLayout>
+    </RelativeLayout>
+</com.gzligo.ebizzcardstranslator.common.DraggableLayout>

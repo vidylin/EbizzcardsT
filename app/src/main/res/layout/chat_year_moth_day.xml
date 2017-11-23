@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/year_moth_day_ll"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/chat_year_moth_day_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/chat_time">
+
+        <TextView
+            android:id="@+id/chat_year_moth_day_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2016.06.12"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/system_msg_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="20px"
+        android:visibility="gone"
+        android:background="@drawable/chat_time">
+
+        <TextView
+            android:id="@+id/system_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2016.06.12"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+    </RelativeLayout>
+</LinearLayout>

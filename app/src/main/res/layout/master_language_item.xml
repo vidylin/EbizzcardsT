@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ligo="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/language_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="66px">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/master_language_passed"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="20px"
+            android:textSize="@dimen/px28dp"
+            android:textColor="@color/black_body_simple"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/parting_line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <com.gzligo.ebizzcardstranslator.common.TxtSwitch
+        android:id="@+id/language_txt_status"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        ligo:switch_line="true"
+        ligo:switch_txt="@string/notification_sound" />
+
+</LinearLayout>

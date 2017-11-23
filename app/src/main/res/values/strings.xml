@@ -1,0 +1,451 @@
+<resources>
+    <string name="app_name">阳光名片翻译官</string>
+
+    <!--OrderFragment-->
+    <string name="order_actionbar">抢单</string>
+    <string name="order_no">暂无订单</string>
+    <string name="order_about_time">预计时长：</string>
+
+    <string name="order_grabbed">本单已被抢</string>
+    <string name="order_expire">本单已过期</string>
+    <string name="order_during_one_hour">1小时内</string>
+    <string name="order_during_one_to_two_hour">2-3小时内</string>
+    <string name="order_during_three_hour">3小时以上</string>
+    <string name="order_choice">有客户选您做翻译</string>
+    <string name="order_is_new">您有新的翻译订单可抢</string>
+    <string name="order_over">有一组对话翻译结束</string>
+    <!--HistoryOrderFragment-->
+    <string name="history_order_actionbar">历史订单</string>
+    <string name="history_order_no">暂无对话记录</string>
+    <string name="history_order_no_score">暂无评分</string>
+    <string name="history_order_translation_fee">翻译费</string>
+    <!--CallRecordsFragment-->
+    <string name="call_records_no">暂无通话记录</string>
+    <string name="call_voice_time">语音通话 %1$d 分钟</string>
+    <string name="call_video_time">视频通话 %1$d 分钟</string>
+    <!--TranslationRecordFragment-->
+    <string name="translation_record_dialogue">对话记录</string>
+    <string name="translation_record_call">通话记录</string>
+    <!--GrabOrderFragment-->
+    <string name="grab_order_dialogue">对话抢单</string>
+    <string name="grab_order_call">通话抢单</string>
+    <string name="grab_order_failed_title">抢单失败,试试其他选择吧</string>
+    <string name="grab_order_failed_know">我知道了</string>
+    <!--RecentContactsFragment-->
+    <string name="recent_contacts_actionbar">最近联系人</string>
+    <string name="recent_contacts_no_message">暂无消息</string>
+    <string name="recent_contacts_free">我有空</string>
+    <string name="recent_contacts_busy">忙碌中</string>
+    <string name="recent_contacts_leave">暂时离开</string>
+    <string name="recent_contacts_off_duty">下班</string>
+    <string name="recent_contacts_history_trans_user">历史翻译客户</string>
+    <!--MeFragment-->
+    <string name="me_actionbar">我的</string>
+    <string name="me_nickname">昵称: &#160;</string>
+    <string name="me_my_wallet">我的钱包</string>
+    <string name="me_orders_num">接单组数</string>
+    <string name="me_work_time">上班时间</string>
+    <string name="me_language">掌握语言</string>
+    <string name="me_my_application">我的申请</string>
+    <string name="me_setting">设置</string>
+    <string name="me_not_applied">未申请</string>
+    <string name="me_unconfirmed">未审核</string>
+    <string name="me_authenticated">已认证</string>
+    <string name="me_unauthenticated">未通过认证</string>
+    <string name="me_confirming">审核中</string>
+    <string name="me_evaluation_lvl">评价等级:  &#160;</string>
+    <string name="me_complete_identity_first">请先完成身份认证</string>
+    <!--ChatActivity-->
+    <string name="chat_send_msg">发送</string>
+    <string name="chat_cancel_msg">取消</string>
+    <string name="chat_msg_image">[图片]</string>
+    <string name="chat_msg_voice">[语音]</string>
+    <string name="chat_msg_voice_txt">语音</string>
+    <string name="chat_msg_micro_video">[小视频]</string>
+    <string name="chat_msg_video">[视频]</string>
+    <string name="chat_msg_product">[产品]</string>
+    <string name="chat_msg_file">[文件]</string>
+    <string name="record_voice_error">录音权限被屏蔽或者录音设备损坏!\n请在设置中检查是否开启权限！</string>
+    <string name="record_voice_permission">请开启麦克风的权限</string>
+    <string name="record_voice_camera_permission">请开启相机的权限</string>
+    <string name="start_trans">本次翻译开始</string>
+    <string name="end_trans">本次翻译结束,时长:</string>
+    <string name="chat_picture">:发来一张图片</string>
+    <string name="chat_voice">:发来一条语音</string>
+    <string name="chat_video">:发来一段视频</string>
+    <string name="chat_product">:发来一个产品</string>
+    <string name="at_you">\@你</string>
+    <string name="click_record_voice">点击录音</string>
+    <string name="space">&#160;</string>
+    <!--ReportActivity-->
+    <string name="report_actionbar">投诉</string>
+    <string name="report_submit">提交</string>
+    <string name="report_reason">请输入投诉原因</string>
+    <string name="report_text_number">100</string>
+
+    <!--common-->
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="next">下一步</string>
+    <string name="complete">完成</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="min">分</string>
+    <string name="second">秒</string>
+    <string name="submit">提交</string>
+    <string name="submitting">正在提交...</string>
+    <string name="submitting_success">提交成功</string>
+    <string name="submitting_filed">提交失败</string>
+    <string name="prompt">提示</string>
+    <string name="prompt_content">您当前账号正在另一台设备上登录</string>
+    <string name="selected">已选%1$s项</string>
+    <string name="cut">裁剪</string>
+
+    <!--hint-->
+    <string name="hint_input_name">请输入名字</string>
+    <string name="hint_input_phone">请输入手机号码</string>
+    <string name="hint_input_pwd">请输入密码</string>
+    <string name="hint_pwd_form">请输入6个或以上的字母与数字组合的密码，并且不得将你的账号用作密码</string>
+
+    <!--LoginActivity-->
+    <string name="login_actionbar">账号登陆</string>
+    <string name="login_country_district">国家/地区</string>
+    <string name="login_china">中国</string>
+    <string name="login_hint_phone">请填写手机号码</string>
+    <string name="login_district_num">+86</string>
+    <string name="login_pwd">密码</string>
+    <string name="login_pwd_hint">请填写密码</string>
+    <string name="login_loging">登录</string>
+    <string name="login_register">注册申请</string>
+    <string name="login_forget">忘记密码</string>
+    <string name="login_being_login">正在登录...</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_phone_permission">请开启电话权限</string>
+    <string name="login_user_not_registered">用户不存在</string>
+    <string name="login_password_wrong">密码错误</string>
+    <string name="login_internet_error">网络错误</string>
+
+    <!--RegisterActivity-->
+    <string name="register_actionbar">注册账号</string>
+    <string name="register_nickname">昵称</string>
+    <string name="register_nickname_demo">例如: Amanda</string>
+    <string name="register_phone_hint">手机号码</string>
+    <string name="forget_pwd_hint">请填写手机号码</string>
+    <string name="register_pwd_hint">6个或以上的字母与数字组合</string>
+    <string name="register_regist">注册</string>
+    <string name="register_take_photo">拍摄</string>
+    <string name="register_from_album">从相册中选择</string>
+    <string name="register_protocol">版权声明和隐私保护条款</string>
+    <string name="register_protocol_actionbar">账号注册协议</string>
+    <string name="register_confirm_phone">确认手机号码</string>
+    <string name="register_sms_code_send_to">短信验证码发送到:</string>
+    <string name="register_sms_code_sending">发送验证码中</string>
+
+    <string name="register_success">注册成功</string>
+    <string name="register_fail">注册失败</string>
+    <string name="search">搜索</string>
+
+    <!--RegisterPhoneVerActivity-->
+    <string name="ver_actionbar">填写验证码</string>
+    <string name="ver_tips_1">请输入手机</string>
+    <string name="ver_tips_2">收到的短信验证码</string>
+    <string name="ver_code">验证码</string>
+    <string name="ver_resend">重新发送</string>
+    <string name="ver_hint">短信验证码</string>
+    <string name="ver_registering">正在注册...</string>
+    <string name="ver_code_error">验证码错误或者已经失效</string>
+    <string name="bind_card_already_bind">该卡号已经绑定</string>
+    <string name="title_activity_chat">ChatActivity</string>
+
+    <!--RegisterSuccessActivity-->
+    <string name="register_success_title">恭喜您注册成功!</string>
+    <string name="register_success_phone_binded_account">该手机已经绑定账号</string>
+    <string name="register_success_login">立刻登录</string>
+    <string name="register_success_continue">继续完善个人信息，认证翻译资格 >></string>
+
+    <!--CountrySelectActivity-->
+    <string name="country_select_actionbar">国家和地区</string>
+
+    <!--ForgetPhoneActivity-->
+    <string name="forget_phone_actionbar">找回密码</string>
+    <string name="forget_phone_tips">通过手机短信验证码找回</string>
+
+    <!--ResetPasswordActivity-->
+    <string name="reset_pwd_actionbar">重置新密码</string>
+    <string name="reset_pwd_tips">新密码为6个或以上的字母与数字的组合</string>
+    <string name="reset_pwd_new_pwd">新密码</string>
+    <string name="reset_pwd_new_pwd_hint">输入新密码</string>
+    <string name="reset_pwd_confirm_pwd">确定密码</string>
+    <string name="reset_pwd_confirm_pwd_hint">再次输入密码</string>
+    <string name="pwd_dissimilarity">两次输入的密码不一致</string>
+
+    <!--ResetCompleteActivity-->
+    <string name="reset_complete_actionbar">重置完成</string>
+    <string name="reset_complete_tips">重置新密码成功!</string>
+    <string name="reset_complete_tips_2">请返回登录</string>
+
+    <!--PersonalBaseMessageActivity-->
+    <string name="base_msg_actionbar">完善信息</string>
+    <string name="base_msg_name">* 姓名</string>
+    <string name="base_msg_name_hint">您的真实姓名</string>
+    <string name="base_msg_idcard">* 身份证</string>
+    <string name="base_msg_idcard_hint">您的身份证号码</string>
+    <string name="base_msg_education">* 学历</string>
+    <string name="base_msg_education_hint">您的学历</string>
+    <string name="base_msg_profession">* 专业</string>
+    <string name="base_msg_profession_hint">您所学的专业</string>
+    <string name="base_msg_language">* 语言</string>
+    <string name="base_msg_language_hint">您所掌握多少种语言</string>
+
+    <!--SelectEducationActivity-->
+    <string name="education_actionbar">选择学历</string>
+    <string name="education_senior">高级中学或同等学历</string>
+    <string name="education_college">大学专科</string>
+    <string name="education_undergraduate">大学本科</string>
+    <string name="education_master">硕士研究生</string>
+    <string name="education_doctor">博士研究生</string>
+
+    <!--SelectLanguageActivity-->
+    <string name="language_select_actionbar">选择语言</string>
+
+    <!--UploadIdCardActivity-->
+    <string name="upload_idcard_actionbar">上传证件</string>
+    <string name="upload_idcard_tip">* 请您上传身份证证件</string>
+    <string name="upload_idcard_tip2">注意 : 请您上传清晰照片，并且图片小于5M。</string>
+    <string name="upload_idcard_positive">正面</string>
+    <string name="upload_idcard_negative">反面</string>
+    <string name="upload_idcard_halfbody">手持身份证半身照</string>
+    <string name="upload_idcard_toast">请按照顺序上传照片</string>
+
+    <!--PersonalInfoConfirmActivity-->
+    <string name="personal_info_name">姓名</string>
+    <string name="personal_info_idcard">身份证</string>
+    <string name="personal_info_education">学历</string>
+    <string name="personal_info_profession">专业</string>
+    <string name="personal_info_idcard_confirm">身份证明</string>
+    <string name="personal_info_education_confirm">学历证明</string>
+    <string name="personal_info_confirm_state">审核状态</string>
+    <string name="personal_info_reapply">重新申请</string>
+
+    <!--LanguageConfirmActivity-->
+    <string name="language_confirm_cers">已上传的证书</string>
+
+    <!--UploadCertificateActivity-->
+    <string name="upload_certificate_tip1">* 请您上传毕业证或学生证证件</string>
+    <string name="upload_certificate_tip2">* 语言等级证书, 或其他相关证明</string>
+    <string name="upload_certificate_btn">提交认证</string>
+
+    <!--SubmitCompleteActivity-->
+    <string name="submit_actionbar">提交完成</string>
+    <string name="submit_tip1">您的信息已成功提交</string>
+    <string name="submit_tip2">审核结果将在3个工作日内反馈</string>
+    <string name="submit_tip3">请保持手机通讯畅通</string>
+
+    <!--SettingActivity-->
+    <string name="setting_actionbar">设置</string>
+    <string name="setting_notification">消息通知</string>
+    <string name="setting_languages">多语言</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_version">版本</string>
+    <string name="setting_logout">退出登录</string>
+
+    <!--SettingNotificationActivity-->
+    <string name="notification_get_new_msg">接收新消息通知</string>
+    <string name="notification_opened">已开启</string>
+    <string name="notification_detail">通知显示消息详情</string>
+    <string name="notification_tip1">关闭后，当收到消息时，通知提示将不显示发信人和内容摘要</string>
+    <string name="notification_sound">声音</string>
+    <string name="notification_vibrate">震动</string>
+    <string name="notification_tip2">当系统在运行时，你可以设置是否需要声音或者震动</string>
+
+    <!--SettingLanguagesActivity-->
+    <string name="setting_languages_tip">当前可选语言</string>
+    <string name="setting_languages_zh">简体中文</string>
+    <string name="setting_languages_en">English</string>
+
+    <!--MyProfileActivity-->
+    <string name="myprofile_actionbar">我的资料</string>
+    <string name="myprofile_avatar">头像</string>
+    <string name="myprofile_nickname">昵称</string>
+    <string name="myprofile_account">ID账号</string>
+    <string name="myprofile_star_lvl">评价等级</string>
+    <string name="myprofile_birthday">生日</string>
+    <string name="myprofile_sex">性别</string>
+    <string name="myprofile_location">地区</string>
+    <string name="myprofile_edit_nickname">编辑昵称</string>
+    <string name="myprofile_input_nickname">请输入昵称</string>
+    <string name="myprofile_male">男</string>
+    <string name="myprofile_female">女</string>
+    <string name="myprofile_choose_sex">选择性别</string>
+
+    <!--OrderNumActivity-->
+    <string name="order_num_actionbar">接单组数</string>
+    <string name="order_num_1">1组</string>
+    <string name="order_num_2">2组</string>
+    <string name="order_num_3">3组</string>
+    <string name="order_num_4">4组</string>
+    <string name="order_num_5">5组</string>
+
+    <!--WorkTimeActivity-->
+    <string name="work_time_choose_time">选择时间段</string>
+    <string name="work_work_on">上班时间</string>
+    <string name="work_work_off">下班时间</string>
+    <string name="work_time_toast_complete_choose">请选择完整的上班时间和下班时间</string>
+
+    <!--MyApplicationActivity-->
+    <string name="my_apply_personal_msg">个人信息认证</string>
+    <string name="my_apply_not_passed">未通过</string>
+    <string name="my_apply_passed">已通过</string>
+    <string name="my_apply_confirming">审核中</string>
+    <string name="my_apply_item_ex">翻译资格认证</string>
+
+    <!--MasterLanguageActivity-->
+    <string name="master_language_passed">已审核语言</string>
+    <string name="master_language_apply">申请语言</string>
+    <string name="master_language_unconfirmed">待审核语言</string>
+    <string name="apply">申请</string>
+    <string name="commonly">(一般)</string>
+    <string name="skilled">(熟练)</string>
+    <string name="master">(精通)</string>
+    <string name="master_forbid_language">禁用后，您将不再接受该语言的订单。重新启用可以恢复。</string>
+    <string name="master_forbid">禁用</string>
+    <string name="master_start_language">启用后，客户可向您请求翻译该语言的订单。</string>
+    <string name="master_start">启用</string>
+
+    <!--MeMsgActivity-->
+    <string name="me_msg_actionbar">系统消息</string>
+    <string name="me_msg_clear">清空</string>
+    <string name="me_msg_no_content">暂无邮件</string>
+
+    <!--MyWalletActivity-->
+    <string name="my_wallet_left">余额（元）</string>
+    <string name="my_wallet_take_money">提现</string>
+    <string name="my_wallet_add_bank_card">添加银行卡</string>
+    <string name="my_wallet_my_bank_card">我的银行卡</string>
+    <string name="my_wallet_over_1000">余额满1000元方可提现</string>
+    <string name="my_wallet_limit">每日可提3次, 每笔不低于1元</string>
+    <string name="bind_bank_card">请先绑定银行卡</string>
+
+    <!--OpeningPointActivity-->
+    <string name="opening_point_title">开户网点</string>
+    <string name="province">省份</string>
+    <string name="city">城市</string>
+    <string name="point">网点</string>
+    <string name="province_name_hint">请选择开户所在的省份</string>
+    <string name="city_name_hint">请选择开户所在的城市</string>
+    <string name="point_name_hint">请选择该卡的银行支行</string>
+
+
+    <!--AddBankCardActivity-->
+    <string name="add_bank_name">姓名</string>
+    <string name="add_bank_name_hint">请完善个人信息</string>
+    <string name="add_bank_card_num">卡号</string>
+    <string name="add_bank_card_num_hint">请输入银行卡号</string>
+    <string name="add_bank_country">国家</string>
+    <string name="add_bank_country_default">中国</string>
+    <string name="add_bank_bank">银行</string>
+    <string name="add_bank_bank_hint">请选择所属银行</string>
+    <string name="add_bank_open_account">开户网点</string>
+    <string name="add_bank_open_account_hint">请选择该卡开户的网点</string>
+    <string name="add_bank_agreed">已阅读并同意如下协议</string>
+    <string name="add_bank_protocol">《用户支付协议》</string>
+
+    <!--BankCardPasswordSettingActivity-->
+    <string name="bank_password_setting_actionbar">设置提现密码</string>
+    <string name="bank_password_setting_tip1">提现密码，是您每次提现时需验证的安全码。</string>
+    <string name="bank_password_setting_confirm">再次确认提现密码</string>
+    <string name="pwd_error">两次输入的密码不一致</string>
+    <string name="bank_password_old">请输入旧密码</string>
+    <string name="bank_password_new">请输入新密码</string>
+    <string name="bank_password_new_again">请再次输入新密码</string>
+    <string name="bank_password_error">输入密码不正确</string>
+
+    <!--MyBankCardActivity-->
+    <string name="my_bankcard_actionbar">银行卡</string>
+    <string name="my_bankcard_release_bind">解除绑定</string>
+    <string name="bank_type">储蓄卡</string>
+
+    <!--MyWalletDialog-->
+    <string name="my_wallet_dialog_add_bank">添加银行卡</string>
+    <string name="my_wallet_dialog_record">提现记录</string>
+    <string name="my_wallet_no_record">暂无记录</string>
+    <string name="my_wallet_dialog_password">密码管理</string>
+
+    <!--MyWalletPasswordManagerActivity-->
+    <string name="change_my_wallet_password">修改提现密码</string>
+    <string name="forget_my_wallet_password">忘记提现密码</string>
+
+    <!--TakeExtraCashActivity-->
+    <string name="take_extra_actionbar">余额提现</string>
+    <string name="take_extra_num">提现金额</string>
+    <string name="take_extra">余额</string>
+    <string name="take_extra_take_all">全部提现</string>
+    <string name="take_extra_tip1">1&#8211;3个工作日内到账</string>
+    <string name="take_extra_tip2_over_times">今日提现已满3次，请明天再来提取。\n如有疑问请联系我们。</string>
+    <string name="take_extra_take">提现</string>
+    <string name="take_extra_money_over_extra">输入金额超过账户余额</string>
+    <string name="take_extra_input_pwd">请输入提现密码</string>
+    <string name="bank_card_last_num">尾号</string>
+    <string name="take_cash_pwd_error">提现密码错误</string>
+    <string name="take_cash_time_error">已超过每日提现次数</string>
+
+    <!--TakeCashDetailActivity-->
+    <string name="take_detail_actionbar">提现详情</string>
+    <string name="take_detail_success">提现申请成功</string>
+    <string name="take_detail_tip">后台审核通过后，款项将于1&#8211;3个工作日内到账。\n若该银行卡户主与您所填持卡人姓名不一致，\n则本笔款项将返至您的翻译官账户。</string>
+
+    <!--CurrencyType-->
+    <string name="currency_zh">¥</string>
+    <string name="currency_en">$</string>
+    <string name="currency_in">Rp</string>
+
+    <!--RecentContactsFragment-->
+    <string name="start_translation">[系统消息] 现在开始翻译</string>
+    <string name="end_translation">[系统消息] 翻译结束</string>
+
+    <!--CountryAndBankListActivity-->
+    <string name="choice_country">选择国家</string>
+    <string name="choice_bank">选择银行</string>
+    <string name="choice_province">省份</string>
+    <string name="choice_city">城市</string>
+    <string name="choice_bank_point">开户网点</string>
+
+    <!--MyWalletRecordActivity-->
+    <string name="get_cash_ing">提现中</string>
+    <string name="get_cash_error">提现失败</string>
+    <string name="get_cash_success">已打款</string>
+
+    <!--MyWalletRecordDetailActivity-->
+    <string name="my_wallet_record_detail_title">提现详情</string>
+    <string name="cash_of_amount">提现金额</string>
+    <string name="cash_of_order">提现单号</string>
+    <string name="cash_of_status">提现状态</string>
+    <string name="cash_of_bank">提现银行</string>
+    <string name="cash_of_time">打款时间</string>
+    <string name="cash_failed_reason">失败原因</string>
+
+    <!--UserServiceAgreementActivity-->
+    <string name="user_service_agreement_title">用户服务协议</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--VoiceCallsActivity-->
+    <string name="voice_calls_title">语音通话</string>
+    <string name="voice_calls_content">邀请您进行翻译语音通话...</string>
+    <string name="voice_calls_mute">静音</string>
+    <string name="voice_calls_hands_free">免提</string>
+    <string name="voice_calls_hand_up">挂断</string>
+    <string name="voice_calls_reject">拒绝</string>
+    <string name="voice_calls_accept">接听</string>
+    <string name="voice_calls_switch">切换</string>
+    <string name="voice_calls_connect_voip_server">正在连接...</string>
+
+    <string name="video_calls_title">视频通话</string>
+    <string name="video_calls_time">分钟</string>
+    <string name="voice_calls_video_content">邀请您进行翻译视频通话...</string>
+
+    <string name="notify_close_detail_more_than_contact_send">个联系人发来</string>
+    <string name="notify_close_detail_send_msg">条消息</string>
+</resources>

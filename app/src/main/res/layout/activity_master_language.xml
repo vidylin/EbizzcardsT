@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true"
+        ligo:txt_center_title="@string/me_language"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout
+            android:layout_above="@+id/master_language_apply_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ligo:srlEnablePureScrollMode="true">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/master_language_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:overScrollMode="never"
+                android:transcriptMode="alwaysScroll" />
+
+        </com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/master_language_apply_rl"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@drawable/onclick_color_selector"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/master_language_apply_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/master_language_plus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px30dp"
+                android:textColor="@color/blue"
+                android:text="@string/master_language_apply"
+                android:layout_toRightOf="@id/master_language_apply_iv"
+                android:layout_marginLeft="12px"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/parting_line"
+            android:layout_above="@id/master_language_apply_rl"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

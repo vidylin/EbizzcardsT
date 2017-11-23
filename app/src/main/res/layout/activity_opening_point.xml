@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnablePureScrollMode="true">
+
+    <LinearLayout
+        xmlns:ligo="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ligo:show_back_icon="true"
+            ligo:txt_center_title="@string/opening_point_title"/>
+
+        <RelativeLayout
+            android:id="@+id/add_province_rl"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@color/white"
+            android:layout_marginTop="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:text="@string/province"
+                android:textSize="@dimen/px30dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/province_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="222px"
+                android:textSize="30px"
+                android:textColor="@color/black"
+                android:hint="@string/province_name_hint"
+                android:textColorHint="@color/text_report_reason_hint"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_01"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20px"
+                android:background="@color/line" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_selector" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/add_city_rl"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:text="@string/city"
+                android:textSize="@dimen/px30dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/city_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="222px"
+                android:textSize="30px"
+                android:textColor="@color/black"
+                android:hint="@string/city_name_hint"
+                android:textColorHint="@color/text_report_reason_hint"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_01"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20px"
+                android:background="@color/line" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_selector" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/add_point_rl"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:text="@string/point"
+                android:textSize="@dimen/px30dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/point_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="222px"
+                android:layout_marginRight="20px"
+                android:textSize="30px"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:hint="@string/point_name_hint"
+                android:textColorHint="@color/text_report_reason_hint"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_01"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20px"
+                android:background="@color/line" />
+
+            <ImageView
+                android:id="@+id/image_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_selector" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/confirm_bank_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="20px"
+            android:background="@mipmap/green_btn_normal"
+            android:textAllCaps="false"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18"/>
+    </LinearLayout>
+</com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout>
+

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/onclick_color_selector"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px">
+
+                <ImageView
+                    android:id="@+id/grab_order_time_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/grab_order_time"/>
+
+                <TextView
+                    android:id="@+id/about_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@id/grab_order_time_img"
+                    android:text="@string/order_about_time"
+                    android:textColor="@color/black"
+                    android:textSize="24px"/>
+
+                <TextView
+                    android:id="@+id/estimate_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/about_time_tv"
+                    android:text="1-3小时"
+                    android:textColor="@color/black"
+                    android:textSize="24px"/>
+
+                <TextView
+                    android:id="@+id/order_fee_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="$ 300"
+                    android:textColor="@color/black"
+                    android:textSize="24px"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:background="@color/parting_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px">
+
+                <ImageView
+                    android:id="@+id/from_people_img"
+                    android:layout_width="78px"
+                    android:layout_height="78px"
+                    android:layout_marginLeft="68px"
+                    android:src="@mipmap/default_head_portrait"/>
+
+                <ImageView
+                    android:id="@+id/to_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="68px"
+                    android:layout_toRightOf="@id/from_people_img"
+                    android:src="@drawable/grab_order_arrow_selector"/>
+
+                <ImageView
+                    android:id="@+id/to_people_img"
+                    android:layout_width="78px"
+                    android:layout_height="78px"
+                    android:layout_marginLeft="68px"
+                    android:layout_toRightOf="@id/to_img"
+                    android:src="@mipmap/default_head_portrait"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/grab_sign"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="214px"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/from_people_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="s盖"
+                        android:textColor="@color/black_body_simple"
+                        android:textSize="24px"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="214px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35px"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/to_people_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="sadfasdfasdfadfadfadfadfafafafsadfafd"
+                        android:textColor="@color/black_body_simple"
+                        android:textSize="24px"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="30px">
+
+                <LinearLayout
+                    android:id="@+id/from_language_ll"
+                    android:layout_width="214px"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/from_language_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="中文"
+                        android:textColor="@color/black"
+                        android:textSize="32px"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/to_language_ll"
+                    android:layout_width="214px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35px"
+                    android:layout_toRightOf="@id/from_language_ll"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/to_language_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="英文"
+                        android:textColor="@color/black"
+                        android:textSize="32px"/>
+                </LinearLayout>
+
+                <com.gzligo.ebizzcardstranslator.common.ChronometerView
+                    android:id="@+id/order_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30px"
+                    android:format="00:00"
+                    android:textColor="@color/green"
+                    android:textSize="32px"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/remarks_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:background="@drawable/remarks"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/remarks_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_marginTop="30px"
+                    android:text="动态文件件服务N，比如聊天图片动态片;l"
+                    android:textColor="@color/black_body_simple"
+                    android:textSize="28px"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="150px"
+    android:layout_height="80px">
+    <RelativeLayout
+        android:id="@+id/re_trans_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/chat_re_translation">
+        <TextView
+            android:id="@+id/tv_re_trans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:textSize="28px"
+            android:textColor="@color/white"
+            android:text="重新翻译"/>
+    </RelativeLayout>
+</LinearLayout>

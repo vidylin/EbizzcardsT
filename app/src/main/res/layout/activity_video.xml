@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/pre_rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.waynell.videolist.widget.TextureVideoView
+        android:id="@+id/video_player_vv"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        app:scaleType="fitCenter"
+        />
+
+    <ImageView
+        android:id="@+id/video_cover"
+        android:layout_width="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_centerInParent="true"
+        android:layout_height="400dp"/>
+
+    <ProgressBar
+        android:id="@+id/video_down_progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/play_video_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/play_video"/>
+
+</RelativeLayout>

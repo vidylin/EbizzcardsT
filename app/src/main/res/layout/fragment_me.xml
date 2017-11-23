@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnablePureScrollMode="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/me_my_profile_rl"
+            android:layout_width="match_parent"
+            android:layout_height="168px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/onclick_color_selector">
+
+            <ImageView
+                android:id="@+id/me_avatar_iv"
+                android:layout_width="108px"
+                android:layout_height="108px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:src="@mipmap/me_defalut_avatar" />
+
+            <TextView
+                android:id="@+id/me_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:layout_marginTop="45px"
+                android:layout_toRightOf="@id/me_avatar_iv"
+                android:text="@string/me_nickname"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px30dp" />
+
+            <TextView
+                android:id="@+id/me_nickname_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45px"
+                android:layout_toRightOf="@id/me_nickname"
+                android:text="123"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px30dp" />
+
+            <TextView
+                android:id="@+id/me_unconfirmed_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="38px"
+                android:layout_marginLeft="32px"
+                android:layout_toRightOf="@id/me_avatar_iv"
+                android:text="@string/me_unconfirmed"
+                android:textColor="@color/red"
+                android:textSize="@dimen/px30dp" />
+
+            <RelativeLayout
+                android:id="@+id/me_evaluation_lvl_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="38px"
+                android:layout_marginLeft="32px"
+                android:layout_toRightOf="@id/me_avatar_iv"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/me_evaluation_lvl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/me_evaluation_lvl"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px30dp" />
+
+                <ImageView
+                    android:id="@+id/me_star_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8px"
+                    android:layout_toRightOf="@id/me_evaluation_lvl"
+                    android:src="@mipmap/star"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/me_star_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8px"
+                    android:layout_toRightOf="@+id/me_star_1"
+                    android:src="@mipmap/star"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/me_star_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8px"
+                    android:layout_toRightOf="@+id/me_star_2"
+                    android:src="@mipmap/star"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/me_star_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8px"
+                    android:layout_toRightOf="@+id/me_star_3"
+                    android:src="@mipmap/star"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/me_star_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/me_star_4"
+                    android:src="@mipmap/star"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_selector" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/me_my_wallet_rl"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/onclick_color_selector">
+
+            <ImageView
+                android:id="@+id/wallet_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="25px"
+                android:src="@mipmap/my_wallet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/wallet_iv"
+                android:text="@string/me_my_wallet"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px30dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_selector" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_01"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20px"
+                android:background="@color/line" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/me_order_num_rl"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@drawable/onclick_color_selector">
+
+            <ImageView
+                android:id="@+id/order_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="25px"
+                android:src="@mipmap/me_order_num" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/order_iv"
+                android:text="@string/me_orders_num"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px30dp" />
+
+            <ImageView
+                android:id="@+id/wallet_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_selector" />
+
+            <TextView
+                android:id="@+id/me_order_num_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/wallet_arrow"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px30dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/me_work_time_rl"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/onclick_color_selector">
+
+            <ImageView
+                android:id="@+id/work_time_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="25px"
+                android:src="@mipmap/me_work_time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/work_time_iv"
+                android:text="@string/me_work_time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px30dp" />
+
+            <ImageView
+                android:id="@+id/work_time_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_selector" />
+
+            <TextView
+                android:id="@+id/me_work_time_num_txt_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/work_time_arrow"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px30dp" />
+
+            <TextView
+                android:id="@+id/me_work_time_num_txt_am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:layout_toLeftOf="@id/me_work_time_num_txt_pm"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_01"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20px"
+                android:background="@color/line" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/me_language_rl"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@drawable/onclick_color_selector">
+
+            <ImageView
+                android:id="@+id/language_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="25px"
+                android:src="@mipmap/me_language" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/language_iv"
+                android:text="@string/me_language"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_01"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20px"
+                android:background="@color/line" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/me_my_application_rl"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@drawable/onclick_color_selector">
+
+            <ImageView
+                android:id="@+id/application_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="25px"
+                android:src="@mipmap/me_my_application" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/application_iv"
+                android:text="@string/me_my_application"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px30dp" />
+
+            <ImageView
+                android:id="@+id/application_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_selector" />
+
+            <ImageView
+                android:id="@+id/me_my_application_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/application_arrow"
+                android:background="@mipmap/me_no_pass_zh" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/me_setting_rl"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/onclick_color_selector">
+
+            <ImageView
+                android:id="@+id/setting_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="25px"
+                android:src="@mipmap/me_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/setting_iv"
+                android:text="@string/me_setting"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px30dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_selector" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout>

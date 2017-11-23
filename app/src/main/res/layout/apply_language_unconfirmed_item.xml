@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/application_language_unconfirmed_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/master_language_unconfirmed"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="20px"
+        android:layout_marginBottom="20px"
+        android:textSize="@dimen/px28dp"
+        android:textColor="@color/black_body_simple"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@drawable/onclick_color_selector">
+        
+        <TextView
+            android:id="@+id/apply_language_unconfirmed_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px30dp"
+            android:gravity="center_vertical"
+            android:text="简介"/>
+
+        <ImageView
+            android:id="@+id/apply_language_unconfirmed_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/apply_language_unconfirmed_nomarl"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/parting_line"/>
+        
+    </RelativeLayout>
+    
+</LinearLayout>

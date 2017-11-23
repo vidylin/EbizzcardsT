@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- action_bar -->
+    <declare-styleable name="APP_ActionBar">
+        <attr name="show_back_icon" format="boolean" />
+        <attr name="txt_close" format="reference" />
+        <attr name="txt_title" format="reference" />
+        <attr name="txt_center_title" format="reference" />
+        <attr name="txt_sub_title" format="reference" />
+        <attr name="txt_right1" format="reference" />
+        <attr name="txt_right2" format="reference" />
+        <attr name="txt_right3" format="reference" />
+        <attr name="txt_right4" format="reference" />
+
+        <attr name="txt_left1" format="reference" />
+        <attr name="txt_left2" format="reference" />
+
+        <attr name="line" format="boolean" />
+        <attr name="vertical_line" format="boolean" />
+
+        <attr name="txt_hint" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"></attr>
+        <attr name="bmHeight" format="dimension"></attr>
+        <attr name="switch_txt" format="string" />
+        <attr name="switch_line" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="selectedTabTextColor" format="color" />
+        <attr name="pstsTextColor" format="color" />
+    </declare-styleable>
+
+
+    <attr name="titleText" format="string" />
+    <attr name="titleTextSize" format="dimension" />
+    <attr name="bgColor" format="color" />
+
+    <declare-styleable name="CustomTitleView">
+        <attr name="titleText" />
+        <attr name="titleNotifyTextColor" format="color" />
+        <attr name="titleTextSize" />
+        <attr name="bgColor" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundLine">
+        <attr name="bg" format="reference" />
+    </declare-styleable>
+
+    <!--  <declare-styleable name="ChatVoiceWave">
+          <attr name="voice_count" />
+          <attr name="voice_color" />
+          <attr name="voice_spacing" />
+          <attr name="voice_width"/>
+      </declare-styleable>-->
+
+    <declare-styleable name="FocusImageView">
+        <attr name="focus_focusing_id" format="integer" />
+        <attr name="focus_success_id" format="integer" />
+        <attr name="focus_fail_id" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CommentListView">
+        <attr name="item_color" format="color" />
+        <attr name="item_selector_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ExpandTextView">
+        <attr name="showLines" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyView">
+        <attr name="empty_iv" format="reference" />
+        <attr name="empty_tv" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PropertiesView">
+        <attr name="edit_properties" format="boolean" />
+    </declare-styleable>
+
+
+    <attr name="textSize" format="dimension" />
+
+    <attr name="indexBarTextSize" format="dimension" />
+
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" />
+        <attr name="indexBarPressBackground" format="color" />
+    </declare-styleable>
+
+
+    <!--渐变TabView-->
+    <declare-styleable name="GradualTabView">
+        <attr name="tabIconNormal" format="reference" />
+        <attr name="tabIconSelected" format="reference" />
+        <attr name="tabText" format="string" />
+        <attr name="tabTextSize" format="dimension" />
+        <attr name="textColorNormal" format="color" />
+        <attr name="textColorSelected" format="color" />
+        <attr name="badgeBackgroundColor" format="color" />
+        <attr name="paddingTexwithIcon" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PayPwdEditView">
+        <attr name="VerifyBorderWidth" format="dimension" />
+        <attr name="VerifyBorderColor" format="color" />
+        <attr name="VerifyBorderRadius" format="dimension" />
+        <attr name="VerifyCodeTextSize" format="dimension" />
+        <attr name="VerifyCodeTextColor" format="color" />
+        <attr name="VerifyCodeLength" format="integer" />
+    </declare-styleable>
+
+    <!--autolayout-->
+    <declare-styleable name="AutoTabLayout">
+        <attr name="auto_textSize_base_width" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleView">
+        <attr name="firstColor" format="color"/>
+        <attr name="secondColor" format="color"/>
+        <attr name="circleWidth" format="dimension"/>
+        <attr name="speed" format="integer"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true"
+        ligo:txt_center_title="@string/myprofile_actionbar" />
+
+    <com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePureScrollMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/myprofile_avatar_rl"
+                android:layout_width="match_parent"
+                android:layout_height="108px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/onclick_color_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/myprofile_avatar"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px30dp" />
+
+                <ImageView
+                    android:id="@+id/myprofile_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/arrow_selector" />
+
+                <ImageView
+                    android:id="@+id/myprofile_avatar_iv"
+                    android:layout_width="81px"
+                    android:layout_height="81px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10px"
+                    android:layout_toLeftOf="@id/myprofile_arrow"
+                    android:src="@mipmap/me_defalut_avatar" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_01"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/line" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myprofile_nickname_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@drawable/onclick_color_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/myprofile_nickname"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px30dp" />
+
+                <ImageView
+                    android:id="@+id/myprofile_nickname_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/arrow_selector" />
+
+                <TextView
+                    android:id="@+id/myprofile_nickname_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/myprofile_nickname_arrow"
+                    android:gravity="right"
+                    android:hint="@string/register_nickname_demo"
+                    android:textColor="@color/black_body_simple"
+                    android:textSize="@dimen/px28dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_01"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/line" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myprofile_account_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@drawable/onclick_color_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/myprofile_account"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px30dp" />
+
+                <TextView
+                    android:id="@+id/myprofile_account_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:textColor="@color/black_body_simple"
+                    android:textSize="@dimen/px28dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_01"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/line" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myprofile_star_lvl_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@drawable/onclick_color_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/myprofile_star_lvl"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px30dp" />
+
+                <ImageView
+                    android:id="@+id/myprofile_star_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:src="@mipmap/star"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/myprofile_star_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8px"
+                    android:layout_toLeftOf="@+id/myprofile_star_1"
+                    android:src="@mipmap/star"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/myprofile_star_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8px"
+                    android:layout_toLeftOf="@+id/myprofile_star_2"
+                    android:src="@mipmap/star"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/myprofile_star_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8px"
+                    android:layout_toLeftOf="@+id/myprofile_star_3"
+                    android:src="@mipmap/star"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/myprofile_star_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8px"
+                    android:layout_toLeftOf="@+id/myprofile_star_4"
+                    android:src="@mipmap/star"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myprofile_birthday_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="30px"
+                android:background="@drawable/onclick_color_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/myprofile_birthday"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px30dp" />
+
+                <ImageView
+                    android:id="@+id/myprofile_birthday_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/arrow_selector" />
+
+                <TextView
+                    android:id="@+id/myprofile_birthday_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/myprofile_birthday_arrow"
+                    android:textColor="@color/black_body_simple"
+                    android:textSize="@dimen/px28dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_01"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/line" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myprofile_sex_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@drawable/onclick_color_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/myprofile_sex"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px30dp" />
+
+                <ImageView
+                    android:id="@+id/myprofile_sex_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/arrow_selector" />
+
+                <TextView
+                    android:id="@+id/myprofile_sex_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/myprofile_sex_arrow"
+                    android:textColor="@color/black_body_simple"
+                    android:textSize="@dimen/px28dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_01"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/line" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myprofile_location_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@drawable/onclick_color_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/myprofile_location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px30dp" />
+
+                <TextView
+                    android:id="@+id/myprofile_location_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:textColor="@color/black_body_simple"
+                    android:textSize="@dimen/px28dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true"
+        ligo:txt_center_title="@string/setting_notification" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginTop="20px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:gravity="center_vertical"
+            android:text="@string/notification_get_new_msg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:gravity="center_vertical"
+            android:text="@string/notification_opened"
+            android:textColor="@color/black_body_simple"
+            android:textSize="@dimen/px28dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_01"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20px"
+            android:background="@color/line" />
+
+    </RelativeLayout>
+
+
+    <com.gzligo.ebizzcardstranslator.common.TxtSwitch
+        android:id="@+id/notification_detail_switch"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        ligo:switch_txt="@string/notification_detail" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:text="@string/notification_tip1"
+        android:textColor="@color/black_body_simple"
+        android:textSize="@dimen/px24dp" />
+
+    <com.gzligo.ebizzcardstranslator.common.TxtSwitch
+        android:id="@+id/notification_sound_switch"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginTop="50px"
+        ligo:switch_line="true"
+        ligo:switch_txt="@string/notification_sound" />
+
+    <com.gzligo.ebizzcardstranslator.common.TxtSwitch
+        android:id="@+id/notification_vibrate_switch"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        ligo:switch_txt="@string/notification_vibrate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:text="@string/notification_tip2"
+        android:textColor="@color/black_body_simple"
+        android:textSize="@dimen/px24dp" />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/my_wallet_head_ll"
+        android:layout_width="match_parent"
+        android:layout_height="66px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/my_wallet_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:textSize="28px"
+            android:textColor="@color/black_body_simple"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/onclick_color_selector"
+        android:layout_height="162px">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/withdrawals_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:text="@string/my_wallet_take_money"
+                android:textColor="@color/black"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/withdrawals_status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="14px"
+                android:textColor="@color/black"
+                android:text="@string/get_cash_ing"
+                android:textSize="24px"/>
+
+            <TextView
+                android:id="@+id/withdrawals_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="14px"
+                android:textColor="@color/black_body_simple"
+                android:textSize="24px"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/withdrawals_sum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40px"
+                android:layout_marginTop="20px"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20px"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_01"
+        android:background="@color/line" />
+
+</LinearLayout>

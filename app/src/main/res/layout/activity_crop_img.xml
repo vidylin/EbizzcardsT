@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ligo="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:id="@+id/crop_image_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true"
+        ligo:txt_right1="@string/confirm"
+        ligo:txt_center_title="@string/cut" />
+
+    <com.gzligo.ebizzcardstranslator.utils.ClipImageLayout
+        android:id="@+id/clip_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+            android:id="@+id/profile_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            ligo:show_back_icon="true"
+            ligo:txt_center_title="@string/me_msg_actionbar"/>
+
+        <TextView
+            android:id="@+id/me_msg_right_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/px32dp"
+            android:textColor="@color/color_normal"
+            android:text="@string/me_msg_clear"
+            android:layout_marginRight="20px"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/me_msg_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"/>
+
+    <RelativeLayout
+        android:id="@+id/me_msg_no_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/me_msg_no_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_body_simple"
+            android:textSize="@dimen/px36dp"
+            android:layout_centerInParent="true"
+            android:text="@string/me_msg_no_content"/>
+
+        <ImageView
+            android:id="@+id/me_msg_no_content_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/me_msg_no_msg"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/me_msg_no_content_tv"
+            android:layout_marginBottom="40px"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

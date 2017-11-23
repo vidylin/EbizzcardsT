@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SmartRefreshLayout</string>
+
+    <string name="srl_loading">Memuat...</string>
+    <string name="srl_refreshing">Memperbarui...</string>
+
+    <!--ClassicsFooter-->
+    <string name="srl_pull_up_to_loadmore">Tarik ke atas memuat lebih</string>
+    <string name="srl_release_to_load">Lepas lalu memuat</string>
+    <string name="srl_loading_completed">Dimuat</string>
+    <string name="srl_fail_to_load">Muat Gagal</string>
+    <string name="srl_full_loaded">Semua dimuat</string>
+
+    <!--ClassicsHeader-->
+    <string name="srl_pull_down_to_refresh">Tarik ke bawah memperbarui</string>
+    <string name="srl_release_to_refresh">Lepas lalu memperbarui</string>
+    <string name="srl_refreshing_completed">Diperbarui</string>
+    <string name="srl_fail_to_refresh">Perbaru Gagal</string>
+    <string name="srl_full_refreshed">Semua diperbarui</string>
+
+</resources>

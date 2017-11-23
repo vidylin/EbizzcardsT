@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "408629264643",
+    "firebase_url": "https://ebizzcards-translator.firebaseio.com",
+    "project_id": "ebizzcards-translator",
+    "storage_bucket": "ebizzcards-translator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408629264643:android:362c45dbbca5d21d",
+        "android_client_info": {
+          "package_name": "com.gzligo.ebizzcardstranslator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408629264643-7m20vuvni37uu34nfaeaqjkn6i8ol5vn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gzligo.ebizzcardstranslator",
+            "certificate_hash": "02cc21849abc10e42846b338870d7ab2bdeb3833"
+          }
+        },
+        {
+          "client_id": "408629264643-vclj88g7erf6qg5aetahue90vthmm87a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD5sdMX6AL6H8l94Oh8r7L3Co1G8O6cYo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408629264643-vclj88g7erf6qg5aetahue90vthmm87a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

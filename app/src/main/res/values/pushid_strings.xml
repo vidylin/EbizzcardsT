@@ -1,0 +1,13 @@
+<resources>
+    <!-- Huawei push parameters.-->
+    <string name="huawei_app_id">100081583</string>
+    <string name="huawei_app_key"></string>
+
+    <!-- Flyme push parameters.-->
+    <string name="flyme_app_id">111197</string>
+    <string name="flyme_app_key">1c1a3cc3c1ba4301a0798d557b98acbf</string>
+
+    <!-- Xiaomi push parameters.-->
+    <string name="xiaomi_app_id">2882303761517613288</string>
+    <string name="xiaomi_app_key">5411761350288</string>
+</resources>

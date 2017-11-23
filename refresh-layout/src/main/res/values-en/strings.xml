@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SmartRefreshLayout</string>
+
+    <string name="srl_loading">Loading...</string>
+    <string name="srl_refreshing">Refreshing...</string>
+
+    <!--ClassicsFooter-->
+    <string name="srl_pull_up_to_loadmore">Pull up to load more</string>
+    <string name="srl_release_to_load">Release then load</string>
+    <string name="srl_loading_completed">Loaded</string>
+    <string name="srl_fail_to_load">Load Fail</string>
+    <string name="srl_full_loaded">All loaded</string>
+
+    <!--ClassicsHeader-->
+    <string name="srl_pull_down_to_refresh">Pull down to refresh</string>
+    <string name="srl_release_to_refresh">Release then refresh</string>
+    <string name="srl_refreshing_completed">Refreshed</string>
+    <string name="srl_fail_to_refresh">Refresh Fail</string>
+    <string name="srl_full_refreshed">All refreshed</string>
+
+</resources>

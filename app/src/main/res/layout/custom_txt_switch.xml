@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_50"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/custom_txt_switch_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:text="123"
+        android:singleLine="true"
+        android:maxEms="15"
+        android:ellipsize="end"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size_16"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/custom_txt_switch_cs" />
+
+    <com.gzligo.ebizzcardstranslator.common.SlideSwitchView
+        android:id="@+id/custom_txt_switch_cs"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/margin_10" />
+
+    <View
+        android:id="@+id/custom_txt_switch_line"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/line_height_01"
+        android:layout_alignLeft="@id/custom_txt_switch_txt"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line" />
+
+</RelativeLayout>

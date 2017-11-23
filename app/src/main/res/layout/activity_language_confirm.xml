@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ligo="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:id="@+id/confirm_language_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true"
+        ligo:txt_center_title="@string/me_my_application"/>
+
+    <com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePureScrollMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="20px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px30dp"
+                    android:layout_marginTop="30px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginBottom="30px"
+                    android:text="@string/language_confirm_cers"
+                    android:textColor="@color/black"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/confirm_language_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20px">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_01"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20px"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="30px">
+
+                    <TextView
+                        android:id="@+id/confirm_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30px"
+                        android:layout_marginLeft="20px"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30dp"
+                        android:text="@string/personal_info_confirm_state"/>
+
+                    <TextView
+                        android:id="@+id/confirm_language_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/confirm_txt"
+                        android:layout_marginLeft="100px"
+                        android:layout_marginTop="30px"
+                        android:textColor="@color/black_body_simple"
+                        android:textSize="@dimen/px30dp"
+                        android:text="1231231231"/>
+
+                    <TextView
+                        android:id="@+id/confirm_language_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/confirm_txt"
+                        android:layout_marginLeft="100px"
+                        android:layout_below="@id/confirm_language_txt"
+                        android:layout_marginTop="15px"
+                        android:layout_marginRight="20px"
+                        android:text="123123123123"
+                        android:textSize="@dimen/px24dp"
+                        android:textColor="@color/black"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/confirm_language_passed_reapply_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/confirm_language_passed_reapply_btn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:background="@drawable/onclick_green_btn_selector"
+                    android:text="@string/personal_info_reapply"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_18"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout>
+
+</LinearLayout>

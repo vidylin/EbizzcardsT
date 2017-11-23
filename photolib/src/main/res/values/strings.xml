@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">photoselectolib</string>
+
+    <string name="preview">预览</string>
+    <string name="photo">照片</string>
+    <string name="send">发送</string>
+    <string name="selected">选择</string>
+    <string name="original">原图</string>
+    <string name="more_than_9">您最多只能选择9张照片</string>
+    <string name="more_than_9_pre">您最多只能选择</string>
+    <string name="more_than_9_after">张照片</string>
+    <string name="please_chose_edit_photo">请选择你要发送的图片</string>
+
+    <string name="Files">Files</string>
+    <string name="Image">Image</string>
+    <string name="Thumbnail">Thumbnail</string>
+    <string name="Video">Video</string>
+
+    <string name="chat_video_to_short">录制视频太短</string>
+    <string name="please_check_camera_permission">请检查是否关闭视频录制的授权</string>
+
+</resources>

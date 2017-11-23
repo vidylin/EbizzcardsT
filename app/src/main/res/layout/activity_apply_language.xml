@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true"
+        ligo:txt_center_title="@string/master_language_apply"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/apply_language_next_rl"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/parting_line"
+                android:layout_alignParentTop="true"/>
+
+            <ImageView
+                android:id="@+id/check_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/language_selected"
+                android:layout_marginLeft="26px"
+                android:layout_marginRight="20px"/>
+
+            <TextView
+                android:id="@+id/apply_language_selected_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px30dp"
+                android:text="123"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/check_iv"/>
+
+            <Button
+                android:id="@+id/apply_language_next_btn"
+                android:layout_width="170px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/green_btn_checkable"
+                android:textAllCaps="false"
+                android:text="@string/apply"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px30dp"/>
+
+        </RelativeLayout>
+
+        <com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout
+            android:id="@+id/audio_record_layout_rl"
+            android:layout_above="@id/apply_language_next_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ligo:srlEnablePureScrollMode="true">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/master_language_passed_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:transcriptMode="alwaysScroll"/>
+
+        </com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

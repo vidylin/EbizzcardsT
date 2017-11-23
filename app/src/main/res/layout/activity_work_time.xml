@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true"
+        ligo:txt_center_title="@string/me_work_time"
+        ligo:txt_right1 = "@string/submit"/>
+
+    <com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePureScrollMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:textColor="@color/black_body_simple"
+                android:textSize="@dimen/px28dp"
+                android:text="@string/work_time_choose_time"/>
+
+            <RelativeLayout
+                android:id="@+id/work_time_on_am_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@drawable/onclick_color_selector">
+
+                <ImageView
+                    android:id="@+id/work_time_on_am_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/work_time_clock"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/work_time_on_am_iv"
+                    android:textSize="@dimen/px30dp"
+                    android:textColor="@color/black"
+                    android:text="@string/work_work_on"/>
+
+                <ImageView
+                    android:id="@+id/work_time_on_am_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/work_time_on_am_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px28dp"
+                    android:textColor="@color/black_body_simple"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/work_time_on_am_arrow" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_01"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/line"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/work_time_off_am_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@drawable/onclick_color_selector">
+
+                <ImageView
+                    android:id="@+id/work_time_off_am_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/work_time_clock"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/work_time_off_am_iv"
+                    android:textSize="@dimen/px30dp"
+                    android:textColor="@color/black"
+                    android:text="@string/work_work_off"/>
+
+                <ImageView
+                    android:id="@+id/work_time_off_am_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/work_time_off_am_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px28dp"
+                    android:textColor="@color/black_body_simple"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/work_time_off_am_arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/work_time_on_pm_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@drawable/onclick_color_selector"
+                android:layout_marginTop="30px">
+
+                <ImageView
+                    android:id="@+id/work_time_on_pm_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/work_time_clock"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/work_time_on_pm_iv"
+                    android:textSize="@dimen/px30dp"
+                    android:textColor="@color/black"
+                    android:text="@string/work_work_on"/>
+
+                <ImageView
+                    android:id="@+id/work_time_on_pm_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/work_time_on_pm_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px28dp"
+                    android:textColor="@color/black_body_simple"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/work_time_on_pm_arrow" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_01"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/line"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/work_time_off_pm_rl"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@drawable/onclick_color_selector">
+
+                <ImageView
+                    android:id="@+id/work_time_off_pm_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/work_time_clock"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/work_time_off_pm_iv"
+                    android:textSize="@dimen/px30dp"
+                    android:textColor="@color/black"
+                    android:text="@string/work_work_off"/>
+
+                <ImageView
+                    android:id="@+id/work_time_off_pm_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/work_time_off_pm_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px28dp"
+                    android:textColor="@color/black_body_simple"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/work_time_off_pm_arrow" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout>
+
+</LinearLayout>

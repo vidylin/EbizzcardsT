@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:id="@+id/login_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true" />
+
+    <RelativeLayout
+        android:id="@+id/chat_group_ll"
+        android:layout_width="match_parent"
+        android:layout_height="108px"
+        android:layout_below="@id/login_actionbar"
+        android:background="@color/chat_head_bg">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trans_groups"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="20px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/chat_group_ll">
+
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+    </RelativeLayout>
+</RelativeLayout>

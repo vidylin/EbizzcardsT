@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:id="@+id/register_success_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:txt_center_title="@string/register_success"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/register_success_avatar_iv"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70px"
+            android:src="@mipmap/register_avatar_normal" />
+
+        <TextView
+            android:id="@+id/register_success_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_success_avatar_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26px"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px36dp" />
+
+        <TextView
+            android:id="@+id/register_success_congratulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_success_nickname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60px"
+            android:text="@string/register_success_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px44dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_success_congratulation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34px"
+            android:text="@string/register_success_phone_binded_account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px30dp" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <Button
+        android:id="@+id/register_success_login"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/onclick_green_btn_selector"
+        android:text="@string/register_success_login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18" />
+
+    <Button
+        android:id="@+id/register_success_continue"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="40px"
+        android:background="@mipmap/register_success_continue"
+        android:text="@string/register_success_continue"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_18" />
+
+</LinearLayout>

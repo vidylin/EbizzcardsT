@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400px"
+    android:id="@+id/chat_record_voice_rl"
+    android:visibility="gone"
+    android:background="@color/chat_input_bottom_bg"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_01"
+        android:layout_alignParentTop="true"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/record_voice_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_view">
+
+        <ImageView
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:background="@mipmap/chat_voice_pressed" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="点击录音"
+            android:textColor="@color/chat_time"
+            android:textSize="30px" />
+
+        <ImageView
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/chat_input_normal" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/record_voice_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27px"
+        android:background="@mipmap/chat_prepare_record_voice" />
+
+    <LinearLayout
+        android:id="@+id/record_voice_ll"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/chat_cancel_msg"
+            android:textColor="@color/record_voice_tv_color"
+            android:textSize="30px" />
+
+        <View
+            android:layout_width="@dimen/line_height_01"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/chat_send_msg"
+            android:textColor="@color/record_voice_tv_color"
+            android:textSize="30px" />
+    </LinearLayout>
+</RelativeLayout>

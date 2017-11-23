@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="88px">
+
+    <LinearLayout
+        android:id="@+id/ll_selector_country"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/onclick_color_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_region"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_weight="5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/login_country_district"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_country_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="8"
+            android:paddingLeft="20px"
+            android:text="@string/login_china"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_selector" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_slector_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_01"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20px"
+        android:background="@color/line" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:id="@+id/register_success_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true"
+        ligo:txt_center_title="@string/country_select_actionbar"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56px"
+        android:layout_marginBottom="16px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="16px"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/country_search_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:src="@mipmap/search" />
+
+        <EditText
+            android:id="@+id/search_country_ed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8px"
+            android:layout_toRightOf="@id/country_search_iv"
+            android:background="@null"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:hint="@string/search"
+            android:textColor="@color/black_body_simple"
+            android:textSize="@dimen/px28dp" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePureScrollMode="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/country_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:transcriptMode="alwaysScroll" />
+    </com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/onclick_color_selector">
+        <ImageView
+            android:id="@+id/bank_img"
+            android:layout_width="76px"
+            android:layout_height="76px"
+            android:src="@mipmap/bank"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="20px"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/bank_img"
+            android:layout_marginTop="20px"
+            android:orientation="vertical"
+            android:layout_marginLeft="20px">
+            <TextView
+                android:id="@+id/bank_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="30px"/>
+            <TextView
+                android:id="@+id/bank_name_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15px"
+                android:text="@string/bank_type"
+                android:textColor="@color/black_body_simple"
+                android:textSize="28px"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="34px"
+                    android:text="* * * *"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20px"
+                    android:textSize="34px"
+                    android:text="* * * *"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20px"
+                    android:textSize="34px"
+                    android:text="* * * *"/>
+                <TextView
+                    android:id="@+id/bank_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20px"
+                    android:textSize="50px"
+                    android:text="9092"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/check_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:src="@mipmap/bank_choice"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

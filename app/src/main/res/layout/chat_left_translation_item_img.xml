@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/chat_time_left" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px">
+
+        <ImageView
+            android:id="@+id/people_img"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="15px"
+            android:background="@mipmap/default_head_portrait" />
+
+        <LinearLayout
+            android:id="@+id/img_ll"
+            android:layout_width="530px"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_translate_display_left"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/voice_ll"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/receive_voice_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@mipmap/voice_play_black_three" />
+                        <TextView
+                            android:id="@+id/voice_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="20px"
+                            android:text="3'"/>
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/img_down_progress"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/voice_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"/>
+                        <TextView
+                            android:id="@+id/product_price_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40px"
+                            android:alpha="0.4"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10px"
+                            android:visibility="gone"
+                            android:textColor="@color/white"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/text_view_bg"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/un_translate_content_txt_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/product_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_01"
+                    android:layout_marginTop="10px"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/voice_img_translation"
+                        android:layout_width="56px"
+                        android:layout_height="56px"
+                        android:background="@mipmap/voice_play_black_three"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/translate_content_txt_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_4"
+                        android:text="123"
+                        android:textColor="@color/green"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

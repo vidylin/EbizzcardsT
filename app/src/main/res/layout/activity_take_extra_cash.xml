@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true"
+        ligo:txt_center_title="@string/take_extra_actionbar" />
+
+    <RelativeLayout
+        android:id="@+id/take_extra_select_bank_rl"
+        android:layout_width="match_parent"
+        android:layout_height="114px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/onclick_color_selector">
+
+        <ImageView
+            android:id="@+id/take_extra_bank_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="20px"
+            android:src="@mipmap/bank_icon_gongshang"/>
+
+        <TextView
+            android:id="@+id/take_extra_bank_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@id/take_extra_bank_icon_iv"
+            android:text="@string/take_extra_tip1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px30dp"/>
+
+        <TextView
+            android:id="@+id/take_extra_bank_card_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/take_extra_bank_name_tv"
+            android:layout_marginTop="2px"
+            android:layout_toRightOf="@id/take_extra_bank_icon_iv"
+            android:text="@string/take_extra_actionbar"
+            android:textColor="@color/black_body_simple"
+            android:textSize="@dimen/px30dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_selector"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_01"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px">
+
+        <RelativeLayout
+            android:id="@+id/take_extra_rl"
+            android:layout_width="match_parent"
+            android:layout_height="170px">
+
+            <TextView
+                android:id="@+id/take_extra_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="15px"
+                android:textSize="@dimen/px30dp"
+                android:textColor="@color/black"
+                android:text="@string/take_extra_num"/>
+
+            <TextView
+                android:id="@+id/take_extra_money_currency_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_below="@id/take_extra_tv"
+                android:textSize="@dimen/px50dp"
+                android:textColor="@color/black"
+                android:text="@string/currency_zh"/>
+
+            <EditText
+                android:id="@+id/take_extra_take_money_num_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/take_extra_tv"
+                android:layout_toRightOf="@id/take_extra_money_currency_tv"
+                android:layout_marginRight="30px"
+                android:inputType="number"
+                android:textSize="@dimen/px60dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginLeft="20px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_01"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30px"
+                android:background="@color/line" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_below="@id/take_extra_rl">
+
+            <RelativeLayout
+                android:id="@+id/take_extra_take_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/take_extra_extra_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/px28dp"
+                    android:textColor="@color/black_body_simple"
+                    android:text="@string/take_extra"/>
+
+                <TextView
+                    android:id="@+id/take_extra_money_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/px28dp"
+                    android:textColor="@color/black_body_simple"
+                    android:layout_toRightOf="@id/take_extra_extra_tv"
+                    android:text="$300.00"/>
+
+                <TextView
+                    android:id="@+id/take_extra_take_all_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/take_extra_money_num_tv"
+                    android:layout_marginLeft="50px"
+                    android:textSize="@dimen/px28dp"
+                    android:textColor="@color/blue"
+                    android:text="@string/take_extra_take_all"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/take_extra_money_over_extra_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:textSize="@dimen/px28dp"
+                android:textColor="@color/red"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="@string/take_extra_money_over_extra"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/take_extra_above_btn_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/px28dp"
+        android:textColor="@color/black_body_simple"
+        android:text="@string/take_extra_tip1"/>
+
+    <Button
+        android:id="@+id/take_extra_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="40px"
+        android:background="@mipmap/green_btn_normal"
+        android:textAllCaps="false"
+        android:text="@string/take_extra_take"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18" />
+
+</LinearLayout>

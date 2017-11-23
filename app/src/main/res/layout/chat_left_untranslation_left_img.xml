@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/chat_time_left" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="15px"
+            android:background="@mipmap/default_head_portrait" />
+
+        <RelativeLayout
+            android:layout_width="610px"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/chat_ll"
+                android:layout_width="530px"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chat_unchecked_left"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/voice_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:background="@mipmap/voice_play_black_three" />
+
+                    <TextView
+                        android:id="@+id/un_translate_content_txt_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_4"
+                        android:text="架点击好久好久好久好久好久会计课件课件课件课件课件口桀口桀口桀似懂非懂发顺丰"
+                        android:textColor="@color/black"
+                        android:textSize="30px" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/report_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/chat_ll"
+                android:button="@null"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/chat_report_selector"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/chat_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:button="@null"
+            android:drawableLeft="@drawable/chat_un_translation_selector"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</LinearLayout>

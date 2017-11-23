@@ -1,0 +1,17 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion ext_compileSdkVersion
+    buildToolsVersion ext_buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion ext_minSdkVersion
+        targetSdkVersion ext_targetSdkVersion
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:txt_center_title="@string/take_detail_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/take_detail_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140px"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/take_cash_success"/>
+
+        <TextView
+            android:id="@+id/take_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/take_detail_iv"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px36dp"
+            android:layout_marginTop="40px"
+            android:text="@string/take_detail_success"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/take_detail_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50px"
+            android:textSize="@dimen/px28dp"
+            android:lineSpacingMultiplier = "1.5"
+            android:gravity="center"
+            android:textColor="@color/black_body_simple"
+            android:text="@string/take_detail_tip"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/take_detail_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="70px"
+        android:background="@drawable/onclick_green_btn_selector"
+        android:text="@string/complete"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18"/>
+
+</LinearLayout>

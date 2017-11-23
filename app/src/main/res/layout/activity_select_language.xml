@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ligo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gzligo.ebizzcardstranslator.common.ToolActionBar
+        android:id="@+id/language_select_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ligo:show_back_icon="true"
+        ligo:txt_center_title="@string/language_select_actionbar" />
+
+    <com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout
+        android:layout_below="@id/language_select_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ligo:srlEnablePureScrollMode="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/language_select_rcylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/language_select_actionbar"
+            android:overScrollMode="never"/>
+
+    </com.gzligo.ebizzcardstranslator.common.refreshlayout.RefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/language_next"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/parting_line"
+            android:layout_alignParentTop="true"/>
+
+        <ImageView
+            android:id="@+id/check_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="26px"
+            android:layout_marginRight="20px"
+            android:src="@mipmap/language_selected" />
+
+        <TextView
+            android:id="@+id/language_selected_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/check_iv"
+            android:gravity="center_vertical"
+            android:text="123"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px30dp" />
+
+        <Button
+            android:id="@+id/language_next_btn"
+            android:layout_width="170px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/green_btn_checkable"
+            android:textAllCaps="false"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px30dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

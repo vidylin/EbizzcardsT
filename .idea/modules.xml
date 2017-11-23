@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EbizzcardsTranslator.iml" filepath="$PROJECT_DIR$/EbizzcardsTranslator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libnettools/libnettools.iml" filepath="$PROJECT_DIR$/libnettools/libnettools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libwebrtc/libwebrtc.iml" filepath="$PROJECT_DIR$/libwebrtc/libwebrtc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logger/logger.iml" filepath="$PROJECT_DIR$/logger/logger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mqtt/mqtt.iml" filepath="$PROJECT_DIR$/mqtt/mqtt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photolib/photolib.iml" filepath="$PROJECT_DIR$/photolib/photolib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refresh-layout/refresh-layout.iml" filepath="$PROJECT_DIR$/refresh-layout/refresh-layout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/telegramgallery/telegramgallery.iml" filepath="$PROJECT_DIR$/telegramgallery/telegramgallery.iml" />
+    </modules>
+  </component>
+</project>
